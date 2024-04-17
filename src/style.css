@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face { font-family: 'Avenir'; src: url('@/assets/AvenirLTStd-Black.otf') format('opentype'); }
+body {
+    font-family: 'Avenir';
+}
