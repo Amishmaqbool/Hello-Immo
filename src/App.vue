@@ -1,10 +1,12 @@
 <script setup>
 
 import CarouselCards from "./components/CarouselCards.vue";
+import TopBanner from "./components/TopBanner.vue";
 </script>
 
 <template>
   <div>
+    <TopBanner/>
     <h1 class="text-red-700 text-[90px] text-center">Hello immo</h1>
     <CarouselCards/>
     </div>
