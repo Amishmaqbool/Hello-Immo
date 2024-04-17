@@ -2,6 +2,7 @@
 
 import CarouselCards from "./components/CarouselCards.vue";
 import TopBanner from "./components/TopBanner.vue";
+import SignupNewsletter from "./components/SignupNewsletter.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import TopBanner from "./components/TopBanner.vue";
     <TopBanner/>
     <h1 class="text-red-700 text-[90px] text-center">Hello immo</h1>
     <CarouselCards/>
+    <SignupNewsletter/>
     </div>
 </template>
 
