@@ -11,7 +11,9 @@ import HeroSection from "./components/HeroSection.vue";
   <div>
     <TopBanner />
     <HeroSection />
+    <div class="bg-[#F4F4F4]">
     <CarouselCards />
+    </div>
     <MortageLoan />
     <SignupNewsletter />
     <Footer />
