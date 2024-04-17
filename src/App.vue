@@ -3,6 +3,7 @@
 import CarouselCards from "./components/CarouselCards.vue";
 import TopBanner from "./components/TopBanner.vue";
 import SignupNewsletter from "./components/SignupNewsletter.vue";
+import Footer from "./components/Footer.vue";
 import MortageLoan from "./components/MortageLoan.vue";
 </script>
 
@@ -13,6 +14,7 @@ import MortageLoan from "./components/MortageLoan.vue";
     <MortageLoan/>
     <CarouselCards/>
     <SignupNewsletter/>
+    <Footer/>
     </div>
 </template>
 
