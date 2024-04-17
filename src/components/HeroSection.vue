@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white">
     <div class="flex items-center justify-between">
-      <div class="max-w-[700px] mx-auto pl-8">
+      <div class="max-w-[700px] mx-auto pl-20">
         <h1
           class="text-[56px] text-[#023047] font-[Cabin] font-semibold leading-[60px] w-[70%]"
         >
