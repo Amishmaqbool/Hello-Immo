@@ -1,47 +1,101 @@
 <template>
-  <div  class="container mx-auto">
+  <div class="container mx-auto py-40">
+    <div class="flex justify-between px-9 pb-10 items-center">
+    <p class="text-5xl text-[#023047] font-bold">Laatst toegevoegde panden</p>
+    <p class="text-[#023047] text-xl font-normal">Bekijk alle panden</p>
+    </div>
     <carousel :items-to-show="3" :itemsToScroll="3">
-      <slide class="bg-red-400 h-[300px] rounded-lg" v-for="slide in 10" :key="slide">
-        {{ slide }}
+      <slide v-for="(slide, index) in slides" :key="index" class="">
+        <div class="bg-white rounded-2xl w-[85%] relative">
+          <img :src="slide.image"  :alt="'Image ' + (index + 1)" class=" w-full h-[300px]"/>
+          <div class="bg-[#d10909] w-fit px-3 py-1 rounded-full absolute top-2 left-4">
+          <span class="text-white">NIEUW</span>
+          </div>
+          <div class="bg-[#034465] w-fit px-3 py-1 rounded-full absolute right-3 top-36 xl:top-44 2xl:top-56">
+          <span class="text-white">{{slide.price}}</span>
+          </div>
+          <div class="bg-[#96a6af] border-[#023047] w-fit p-2 rounded-full absolute top-2 right-4" @click="toggleHeart(slide)">
+          <img src="../assets/hearticon.svg" alt="heart" class="h-[14px] w-[14px]" :class="{ 'bg-red-500': slide.heartClicked }" />
+          </div>
+          <p class="text-[#023047] text-3xl font-bold flex self-start items-start px-8 py-5">{{ slide.text }}</p>
+          <div class="flex max-xl:flex-col items-center xl:justify-between px-8 pb-6">
+          <div class="flex gap-2">
+          <img src="../assets/locationicon.svg" alt="location" class="h-full w-[14px]" />
+          <p class="text-gray-400 text-xl font-normal">{{ slide.location }}</p>
+          </div>
+          <div class="flex gap-2">
+          <img src="../assets/ruler.svg" alt="location" class="h-full w-[15px]"/>
+          <p class="text-gray-400 text-xl font-normal" v-html="slide.scale"></p>
+          </div>
+          <div class="flex gap-2">
+          <img src="../assets/bedicon.svg" alt="location" class="h-full w-[20px]"/>
+          <p class="text-gray-400 text-xl font-normal">{{ slide.bed }}</p>
+          </div>
+          </div>
+        </div>
       </slide>
-  
-      <template #addons>
+      <template #addons >
         <navigation />
-        <pagination />
+        <pagination/>
       </template>
     </carousel>
   </div>
-  </template>
-  
-  <script>
-  // If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
-  import "vue3-carousel/dist/carousel.css";
-  import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
-  
-  export default {
-    name: "CarouselCards",
-    components: {
-      Carousel,
-      Slide,
-      Pagination,
-      Navigation,
-    },
-  };
-  </script>
-  <style scoped>
-  .carousel__slide {
-    margin: 20px;
+</template>
+
+<script>
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import image from "../assets/image.png";
+import image2 from "../assets/image2webp.webp";
+import image3 from "../assets/image3.webp";
+import image4 from "../assets/image4.webp";
+import image5 from "../assets/image5.webp";
+
+
+export default {
+  name: "CarouselCards",
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
+  },
+  data() {
+    return {
+      slides: [
+        { "image": image, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image3, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image2, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image4, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image5, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+      ]
+    };
+  },
+  methods: {
+    toggleHeart(slide) {
+      slide.heartClicked = !slide.heartClicked;
+    }
   }
-  .carousel__prev {
+};
+</script>
 
+<style>
+.carousel__pagination-button::after {
+  width:0px;
+  height:0px;
+  }
+.carousel__pagination-button {
+  margin-top:20px;
+  box-sizing: content-box;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  background-color:#96a6af !important;
+  margin-right:5px;
+  margin-left:5px;
 }
-
-.carousel__next {
-  position: absolute !important;
-  right: -22px !important;
+.carousel__pagination-button--active {
+background-color:#023047 !important;
 }
-.carousel__prev ,.carousel__prev--disabled{
-  position: absolute !important;
- left: -22px !important;
-}
-  </style>
+</style>
