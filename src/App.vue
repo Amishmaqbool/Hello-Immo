@@ -3,12 +3,14 @@
 import CarouselCards from "./components/CarouselCards.vue";
 import TopBanner from "./components/TopBanner.vue";
 import SignupNewsletter from "./components/SignupNewsletter.vue";
+import MortageLoan from "./components/MortageLoan.vue";
 </script>
 
 <template>
   <div>
     <TopBanner/>
     <h1 class="text-red-700 text-[90px] text-center">Hello immo</h1>
+    <MortageLoan/>
     <CarouselCards/>
     <SignupNewsletter/>
     </div>
