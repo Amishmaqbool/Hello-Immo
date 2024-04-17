@@ -62,7 +62,7 @@
       </div>
 
       <div class="lg:mt-[-220px] 2xl:mt-[-97px] w-[1000px]">
-        <img class="bg-transparent 2xl:h-auto h-[800px]" src="/LuxuryHouse.png" alt="LuxuryHouse" />
+        <img class="bg-transparent 2xl:h-auto h-[800px] z-0" src="/LuxuryHouse.png" alt="LuxuryHouse" />
       </div>
     </div>
   </div>
