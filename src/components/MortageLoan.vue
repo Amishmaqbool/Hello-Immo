@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-[#034465] rounded-br-[120px]">
-    <div class="py-[60px] container mx-auto">
-      <div class="flex items-center gap-28">
-        <div class="w-[60%]">
+  <div class="bg-[#034465] lg:rounded-br-[120px]">
+    <div class="py-[60px] container mx-auto sm:px-0 px-5">
+      <div class="lg:flex items-center justify-center gap-8 2xl:gap-28 flex-row-reverse 2xl:flex-row">
+        <div class="lg:w-[40%] 2xl:w-[60%]">
           <img src="../assets/MortageFamily.png" alt="MortageFamily" />
         </div>
-        <div class="w-[40%] relative">
+        <div class="lg:w-[40%] relative lg:pt-0 pt-5">
           <h1
             class="text-[44px] text-white font-[Cabin] leading-[50px] relative"
           >
@@ -29,7 +29,7 @@
             et ea rebum. Stet clita kasd gubergren, no sea
           </p>
           <button
-            class="bg-white text-[#023047] font-medium text-[22px] rounded-[25px] px-4 py-2 mt-[60px] flex gap-2 items-center"
+            class="bg-white text-[#023047] font-medium sm:text-[22px] rounded-[25px] px-4 py-2 mt-[60px] flex gap-2 items-center"
           >
             Vraag uw hypotheek lening aan
             <img src="/ArrowRight.svg" alt="MortageFamily" />

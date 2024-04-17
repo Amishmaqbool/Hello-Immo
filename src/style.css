@@ -13,3 +13,21 @@
 body {
   font-family: "Avenir";
 }
+
+.carousel__prev {
+  left: -40px !important;
+}
+
+.carousel__next {
+  right: -40px !important;
+}
+
+.carousel__pagination{
+  margin-top: 50px !important;
+}
+@media (max-width: 700px) {
+  .carousel__prev,
+  .carousel__next {
+    display: none   !important; /* Hides previous and next arrows */
+  }
+}

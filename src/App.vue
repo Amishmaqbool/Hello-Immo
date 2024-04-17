@@ -12,15 +12,15 @@ import NewsCardsCarousal from "./components/NewsCardsCarousal.vue";
   <div>
     <TopBanner />
     <HeroSection />
-    <!-- <div class="bg-[#F4F4F4]">
-    <CarouselCards />
+    <div class="bg-[#F4F4F4]">
+      <CarouselCards />
     </div>
     <MortageLoan />
     <div class="bg-[#F4F4F4]">
-    <NewsCardsCarousal />
+      <NewsCardsCarousal />
     </div>
     <SignupNewsletter />
-    <Footer /> -->
+    <Footer />
   </div>
 </template>
 
