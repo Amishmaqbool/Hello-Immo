@@ -24,7 +24,7 @@
         </p>
         <div class="pt-[40px] flex items-center justify-center gap-[18px]">
           <input
-            class="rounded-full px-4 py-2 w-[380px]"
+            class="rounded-full px-4 py-2 w-[380px] text-[#023047]"
             placeholder="E-mailadres"
           />
           <button
