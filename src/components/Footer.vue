@@ -6,7 +6,11 @@ import ToogleSwitch from "../components/ToggleSwitch.vue";
     <div class="mt-[160px] bg-[#F4F4F4] rounded-t-[60px]">
       <div class="container mx-auto">
         <div class="flex justify-between">
-          <img class="mb-6" src="/public/Logo.svg" alt="Logo" />
+        <div class="pt-[90px]">
+          <img class="mb-8" src="/public/Logo.svg" alt="Logo" />
+          <ToogleSwitch />
+        </div>
+
           <div class="grid gap-[70px] grid-cols-3 pt-[105px]">
             <div class="text-[#023047] leading-tight">
               <h6 class="font-medium text-[24px]">Menu</h6>
@@ -51,7 +55,6 @@ import ToogleSwitch from "../components/ToggleSwitch.vue";
           <p class="font-normal text-[20px] text-[#023047] opacity-[0.50]">
             Madeby
           </p>
-          <ToogleSwitch />
         </div>
       </div>
     </div>
