@@ -3,10 +3,10 @@
     <div>
       <Navbar />
     </div>
-    <div class="flex items-center justify-between">
-      <div class="max-w-[700px] mx-auto pl-20">
+    <div class="flex items-center gap-20 2xl:justify-between mt-20 2xl:mt-0">
+      <div class="2xl:max-w-[700px] mx-auto pl-20 2xl:pl-28">
         <h1
-          class="text-[56px] text-[#023047] font-[Cabin] font-semibold leading-[60px] w-[70%]"
+          class="text-[56px] text-[#023047] font-[Cabin] font-bold leading-[60px] 2xl:w-[70%]"
         >
           Wij helpen je een thuis vinden én financieren
         </h1>
@@ -14,7 +14,7 @@
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
         </p>
-        <div class="bg-[#F4F4F4] rounded-[20px] py-[40px] px-[32px] mt-[55px]">
+        <div class="bg-[#F4F4F4] rounded-[20px] py-[40px] px-[32px] mt-[55px] mb-10 2xl:mb-0">
           <ToggleSwitch />
           <div class="pt-5">
             <select
@@ -61,8 +61,8 @@
         </div>
       </div>
 
-      <div class="mt-[-97px] w-[1000px]">
-        <img class="bg-transparent" src="/LuxuryHouse.png" alt="LuxuryHouse" />
+      <div class="lg:mt-[-220px] 2xl:mt-[-97px] w-[1000px]">
+        <img class="bg-transparent 2xl:h-auto h-[800px]" src="/LuxuryHouse.png" alt="LuxuryHouse" />
       </div>
     </div>
   </div>
@@ -75,7 +75,3 @@ import { ref } from "vue";
 
 const selected = ref("");
 </script>
-
-<style>
-/* Styles specific to this component */
-</style>
