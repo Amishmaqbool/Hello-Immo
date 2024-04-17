@@ -10,7 +10,6 @@ import ToogleSwitch from "../components/ToggleSwitch.vue";
           <img class="mb-8" src="/public/Logo.svg" alt="Logo" />
           <ToogleSwitch />
         </div>
-
           <div class="grid gap-[70px] grid-cols-3 pt-[105px]">
             <div class="text-[#023047] leading-tight">
               <h6 class="font-medium text-[24px]">Menu</h6>
