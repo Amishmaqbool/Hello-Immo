@@ -31,7 +31,7 @@
 
             <div class="flex gap-x-[32px] items-center pt-8">
               <select
-                class="rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-[200px] font-[500] text-[20px] text-[#023047]"
+                class="rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
                 v-model="selected"
               >
                 <option disabled value="">Type</option>
@@ -40,7 +40,7 @@
               </select>
 
               <select
-                class="rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-[200px] font-[500] text-[20px] text-[#023047]"
+                class="rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
                 v-model="selected"
               >
                 <option disabled value="">Prijis</option>
@@ -48,7 +48,7 @@
                 <option value="Option 2">Option 2</option>
               </select>
 
-              <p class="text-[20px] text-[#023047]">Meer filters</p>
+              <p class="text-[20px] text-[#023047] w-full">Meer filters</p>
             </div>
 
             <button
