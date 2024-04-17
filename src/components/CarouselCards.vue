@@ -7,7 +7,7 @@
     <carousel :items-to-show="3" :itemsToScroll="3">
       <slide v-for="(slide, index) in slides" :key="index" class="">
         <div class="bg-white rounded-2xl w-[85%] relative">
-          <img src="../assets/image.png"  :alt="'Image ' + (index + 1)" class=" w-full"/>
+          <img :src="slide.image"  :alt="'Image ' + (index + 1)" class=" w-full h-[300px]"/>
           <div class="bg-[#d10909] w-fit px-3 py-1 rounded-full absolute top-2 left-4">
           <span class="text-white">NIEUW</span>
           </div>
@@ -45,6 +45,12 @@
 <script>
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import image from "../assets/image.png";
+import image2 from "../assets/image2webp.webp";
+import image3 from "../assets/image3.webp";
+import image4 from "../assets/image4.webp";
+import image5 from "../assets/image5.webp";
+
 
 export default {
   name: "CarouselCards",
@@ -57,12 +63,12 @@ export default {
   data() {
     return {
       slides: [
-        { "image": "../assets/road-city.svg", "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
-        { "image": "../assets/road-city.svg", "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
-        { "image": "../assets/road-city.svg", "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
-        { "image": "../assets/road-city.svg", "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
-        { "image": "../assets/road-city.svg", "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
-        { "image": "../assets/road-city.svg", "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image3, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image2, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image4, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image5, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
+        { "image": image, "text": "Huis to koop Westmalle" , "location": "Vissersstraat 4" , "scale": "220m<sub>2</sub>" ,"bed": "3" , "price":"€ 345.500" , "heartClicked": false  },
       ]
     };
   },

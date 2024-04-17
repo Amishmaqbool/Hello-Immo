@@ -5,6 +5,7 @@ import SignupNewsletter from "./components/SignupNewsletter.vue";
 import Footer from "./components/Footer.vue";
 import MortageLoan from "./components/MortageLoan.vue";
 import HeroSection from "./components/HeroSection.vue";
+import NewsCardsCarousal from "./components/NewsCardsCarousal.vue";
 </script>
 
 <template>
@@ -15,6 +16,9 @@ import HeroSection from "./components/HeroSection.vue";
     <CarouselCards />
     </div>
     <MortageLoan />
+    <div class="bg-[#F4F4F4]">
+    <NewsCardsCarousal />
+    </div>
     <SignupNewsletter />
     <Footer />
   </div>
