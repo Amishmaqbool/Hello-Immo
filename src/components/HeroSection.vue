@@ -61,8 +61,8 @@
         </div>
       </div>
 
-      <div class="w-[1000px]">
-        <img src="/LuxuryHouse.png" alt="LuxuryHouse" />
+      <div class="mt-[-97px] w-[1000px]">
+        <img class="bg-transparent" src="/LuxuryHouse.png" alt="LuxuryHouse" />
       </div>
     </div>
   </div>
