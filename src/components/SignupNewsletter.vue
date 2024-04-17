@@ -2,7 +2,7 @@
   <div class="container mx-auto xl:w-[1360px] pt-20">
     <div class="bg-[#034465] rounded-[20px]">
       <div class="py-[80px] px-[220px] text-center">
-        <h1 class="text-white text-[36px] font-semibold">
+        <h1 class="text-white text-[36px] font-semibold font-[Cabin]">
           Wil jij graag op de hoogte blijven van ons laatste nieuws?
         </h1>
         <p class="text-[20px] text-white pt-[36px]">
