@@ -7,7 +7,7 @@ import ToogleSwitch from "../components/ToggleSwitch.vue";
       <div class="container mx-auto">
         <div class="flex justify-between">
         <div class="pt-[90px]">
-          <img class="mb-8" src="/Logo.svg" alt="Logo" />
+          <img class="mb-8 cursor-pointer" src="/Logo.svg" alt="Logo" />
           <ToogleSwitch />
         </div>
           <div class="grid gap-[70px] grid-cols-3 pt-[105px]">

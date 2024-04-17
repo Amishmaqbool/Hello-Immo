@@ -1,5 +1,8 @@
 <template>
   <div class="bg-white">
+    <div>
+      <Navbar />
+    </div>
     <div class="flex items-center justify-between">
       <div class="max-w-[700px] mx-auto pl-8">
         <h1
@@ -67,6 +70,7 @@
 
 <script setup>
 import ToggleSwitch from "./ToggleSwitch.vue";
+import Navbar from "./Navbar.vue";
 import { ref } from "vue";
 
 const selected = ref("");
