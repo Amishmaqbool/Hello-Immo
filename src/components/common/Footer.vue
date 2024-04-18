@@ -13,18 +13,18 @@ import ToggleSwitch from '../ToggleSwitch.vue';
         </div>
           <div class="flex flex-col sm:flex-row xl:grid gap-8 sm:gap-8 md:gap-7 lg:gap-[50px] xl:gap-[70px] grid-cols-3 pt-[35px] md:pt-[75px] lg:pt-[105px]">
             <div class="text-[#023047] leading-tight">
-              <h6 class="font-medium text-[20px] lg:text-[24px]">Menu</h6>
-              <p class="font-medium text-4 lg:text-[20px] pt-[15px] cursor-pointer">Nieuws</p>
-              <p class="font-medium text-4 lg:text-[20px] cursor-pointer">Over ons</p>
-              <p class="font-medium text-4 lg:text-[20px] cursor-pointer">Contact</p>
+              <h6 class="font-medium text-[20px] lg:text-[24px]  text-[#023047]">Menu</h6>
+              <p class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer  text-[#023047]">Nieuws</p>
+              <p class="font-normal text-4 lg:text-[20px] cursor-pointer  text-[#023047]">Over ons</p>
+              <p class="font-normal text-4 lg:text-[20px] cursor-pointer  text-[#023047]">Contact</p>
             </div>
 
             <div class="text-[#023047] leading-tight">
-              <h6 class="font-medium text-[20px] lg:text-[24px]">Panden te koop</h6>
-              <p class="font-medium text-4 lg:text-[20px] pt-[15px] cursor-pointer">Huis</p>
-              <p class="font-medium text-4 lg:text-[20px] cursor-pointer">Appartement</p>
-              <p class="font-medium text-4 lg:text-[20px] cursor-pointer">Nieuwbouwproject</p>
-              <p class="font-medium text-4 lg:text-[20px] cursor-pointer">Kantoor</p>
+              <h6 class="font-medium text-[20px] lg:text-[24px]  text-[#023047]">Panden te koop</h6>
+              <p class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer  text-[#023047]">Huis</p>
+              <p class="font-normal text-4 lg:text-[20px] cursor-pointer  text-[#023047]">Appartement</p>
+              <p class="font-normal text-4 lg:text-[20px] cursor-pointer  text-[#023047]">Nieuwbouwproject</p>
+              <p class="font-normal text-4 lg:text-[20px] cursor-pointer  text-[#023047]">Kantoor</p>
             </div>
 
             <div class="text-[#023047]">

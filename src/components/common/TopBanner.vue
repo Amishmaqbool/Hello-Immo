@@ -2,7 +2,7 @@
   <div class="bg-[#F4F4F4]">
     <div class="2xl:max-w-[1640px] container mx-auto sm:px-0 px-5">
       <div class="flex items-center justify-between w-full">
-        <div class="md:flex py-4 items-center">
+        <div class="md:flex py-2 items-center">
           <div>
             <h1 class="text-[20px] text-[#023047] font-bold opacity-70">4,8</h1>
           </div>

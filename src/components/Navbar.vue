@@ -1,5 +1,5 @@
 <template>
-  <div class="2xl:max-w-[1640px] container px-5 sm:px-0 sm:mx-auto pt-[38px]">
+  <div class="2xl:max-w-[1640px] container px-5 sm:px-0 sm:mx-auto pt-[30px]">
     <nav>
       <div class="xl:flex justify-between">
         <div class="flex justify-between xl:gap-[18px] items-center">
@@ -18,10 +18,10 @@
 
         <div class="z-50 xl:block hidden">
           <div class="flex items-center gap-4 2xl:gap-[43px]">
-            <p class="font-medium text-[24px] text-[#023047] cursor-pointer">
+            <p class="font-medium text-[22px] text-[#023047] cursor-pointer">
               Panden te koop
             </p>
-            <p class="font-medium text-[24px] text-[#023047] cursor-pointer">
+            <p class="font-medium text-[22px] text-[#023047] cursor-pointer">
               Hypotheeklening
             </p>
             <div

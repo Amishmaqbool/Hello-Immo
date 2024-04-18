@@ -4,7 +4,9 @@
       <Navbar />
     </div>
     <div class="lg:flex items-center gap-20 2xl:justify-between mt-20 2xl:mt-0">
-      <div class="2xl:max-w-[700px] px-5 container sm:mx-auto lg:pl-20 2xl:pl-10">
+      <div
+        class="2xl:max-w-[700px] px-5 container sm:mx-auto lg:pl-20 2xl:pl-10"
+      >
         <h1
           class="text-[40px] sm:text-[56px] text-[#023047] helvatica-Bold leading-[60px] 2xl:w-[75%]"
         >
@@ -59,7 +61,7 @@
 
             <div class="flex justify-center sm:justify-start">
               <button
-                class="bg-[#034465] text-white font-medium text-[22px] rounded-[25px] px-7 py-2 mt-8 flex gap-3 items-center"
+                class="bg-[#034465] text-white font-medium text-[22px] rounded-[25px] px-5 py-2 mt-8 flex gap-4 items-center"
               >
                 Zoek pand
                 <img src="/Search.svg" alt="MortageFamily" />

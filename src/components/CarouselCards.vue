@@ -10,7 +10,7 @@
     </div>
     <carousel :items-to-show="3" :itemsToScroll="3" :breakpoints="breakpoints">
       <slide v-for="(slide, index) in slides" :key="index" class="">
-        <div class="bg-white rounded-2xl w-[90%] sm:w-[95%] h-full flex flex-col justify-between  relative">
+        <div class="bg-white rounded-2xl w-[90%] sm:w-[510px] h-full flex flex-col justify-between  relative">
           <img
             :src="slide.image"
             :alt="'Image ' + (index + 1)"

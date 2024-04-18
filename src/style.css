@@ -31,19 +31,29 @@ body {
 }
 
 .carousel__prev {
-  left: -40px !important;
+  left: -35px !important;
+  width: 40px !important;
+  height: 40px !important;
+  top: 40% !important;
 }
 
 .carousel__next {
-  right: -40px !important;
+  right: -35px !important;
+  width: 40px !important;
+  height: 40px !important;
+  top: 43% !important;
 }
 
-.carousel__pagination{
-  margin-top: 50px !important;
+.carousel__pagination {
+  margin-top: 70px !important;
+}
+.carousel__icon {
+  width: 50px !important;
+  height: 50px !important;
 }
 @media (max-width: 700px) {
   .carousel__prev,
   .carousel__next {
-    display: none   !important; /* Hides previous and next arrows */
+    display: none !important; /* Hides previous and next arrows */
   }
 }
