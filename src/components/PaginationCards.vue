@@ -1,5 +1,5 @@
 <template>
-  <div class="2xl:max-w-[1640px] container px-5 sm:mx-auto">
+  <div class="2xl:max-w-[1640px] container px-5 sm:px-0 sm:mx-auto">
     <div class="pt-[40px]">
       <SearchBanner />
     </div>

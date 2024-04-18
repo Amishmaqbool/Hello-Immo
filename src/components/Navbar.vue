@@ -42,10 +42,10 @@
         'translate-x-0': isMobileMenuOpen,
       }"
     >
-      <button @click="toggleMobileMenu" class="absolute top-0 right-0 p-4">
-        <img class="h-6 w-6" src="/CloseIcon.svg" alt="Close" />
+      <button @click="toggleMobileMenu" class="absolute top-2 right-4 p-2 rounded-full border border-black mb-5">
+        <img class="h-4 w-4" src="/CloseIcon.svg" alt="Close" />
       </button>
-      <ul class="mt-10 space-y-4">
+      <ul class="mt-16 space-y-4">
         <div class="px-5">
           <img src="/Logo.svg" alt="" />
         </div>
