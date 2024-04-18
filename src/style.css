@@ -54,6 +54,19 @@ body {
 @media (max-width: 700px) {
   .carousel__prev,
   .carousel__next {
-    display: none !important; /* Hides previous and next arrows */
+    display: none !important;
   }
+}
+
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("./assets/DownArrow.svg") no-repeat right 15px center;
+  background-size: 28px 28px; 
+  cursor: pointer;
+}
+
+.custom-select::-ms-expand {
+  display: none;
 }

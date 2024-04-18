@@ -4,7 +4,7 @@ import ToggleSwitch from "../ToggleSwitch.vue";
 
 <template>
   <div>
-    <div class="mt-[160px] bg-[#F4F4F4] rounded-t-[60px]">
+    <div class="bg-[#F4F4F4] rounded-t-[60px]">
       <div class="px-5 md:px-6 lg:px-0 2xl:max-w-[1640px] mx-auto container">
         <div class="flex flex-col lg:flex-row justify-between">
           <div class="pt-[60px] lg:pt-[90px]">
@@ -16,7 +16,7 @@ import ToggleSwitch from "../ToggleSwitch.vue";
             <ToggleSwitch />
           </div>
           <div
-            class="flex flex-col sm:flex-row xl:grid gap-8 sm:gap-8 md:gap-7 lg:gap-[50px] xl:gap-[70px] grid-cols-3 pt-[35px] md:pt-[75px] lg:pt-[105px]"
+            class="flex flex-col sm:flex-row xl:grid gap-8 sm:gap-8 md:gap-24 lg:gap-[50px] xl:gap-[70px] grid-cols-3 pt-[35px] md:pt-[75px] lg:pt-[105px]"
           >
             <div class="text-[#023047] leading-tight">
               <h6 class="font-medium text-[20px] lg:text-[24px] text-[#023047]">

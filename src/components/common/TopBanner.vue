@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#F4F4F4]">
+  <div class="bg-[#F4F4F4] lg:block hidden">
     <div class="2xl:max-w-[1640px] container mx-auto sm:px-0 px-5">
       <div class="flex items-center justify-between w-full">
         <div class="md:flex py-2 items-center">

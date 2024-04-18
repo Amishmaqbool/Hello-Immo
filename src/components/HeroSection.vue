@@ -22,7 +22,7 @@
           <ToggleSwitch />
           <div class="pt-5">
             <select
-              class="rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
+              class="custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
               v-model="selected"
             >
               <option disabled value="">Gemeente of postcode</option>
@@ -35,8 +35,8 @@
 
             <div class="sm:flex gap-x-[32px] items-center pt-8">
               <select
-                class="rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
-                v-model="selected"
+                class="custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
+                v-model="selected2"
               >
                 <option disabled value="">Type</option>
                 <option value="Option 1">Option 1</option>
@@ -44,8 +44,8 @@
               </select>
 
               <select
-                class="rounded-[30px] border-[1.5px] sm:mt-0 mt-5 border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
-                v-model="selected"
+                class="custom-select rounded-[30px] border-[1.5px] sm:mt-0 mt-5 border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
+                v-model="selected3"
               >
                 <option disabled value="">Prijis</option>
                 <option value="Option 1">Option 1</option>
@@ -88,4 +88,6 @@ import Navbar from "./Navbar.vue";
 import { ref } from "vue";
 
 const selected = ref("");
+const selected2 = ref("");
+const selected3 = ref("");
 </script>
