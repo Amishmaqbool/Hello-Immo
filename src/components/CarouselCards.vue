@@ -10,7 +10,7 @@
     </div>
     <carousel :items-to-show="3" :itemsToScroll="3" :breakpoints="breakpoints">
       <slide v-for="(slide, index) in slides" :key="index" class="">
-        <div class="bg-white rounded-2xl w-[95%] relative">
+        <div class="bg-white rounded-2xl w-[95%] relative h-full">
           <img
             :src="slide.image"
             :alt="'Image ' + (index + 1)"
@@ -22,7 +22,7 @@
             <span class="text-white text-[18px] font-bold">NIEUW</span>
           </div>
           <div
-            class="bg-[#034465] w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-36 xl:top-44 2xl:top-56"
+            class="bg-[#034465] w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-36 xl:top-44 2xl:top-[16.5rem]"
           >
             <span class="text-white font-bold text-[22px]">{{
               slide.price
@@ -46,7 +46,7 @@
               {{ slide.text }}
             </p>
           </div>
-          <div class="flex max-xl:flex-col gap-8 items-center px-8 pb-6">
+          <div class="lg:flex gap-8 px-8 pb-6">
             <div class="flex gap-2 items-center">
               <img
                 src="../assets/locationicon.svg"

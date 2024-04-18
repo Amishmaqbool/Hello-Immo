@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto sm:px-0 px-5 xl:w-[1360px] pt-20">
     <div class="bg-[#034465] rounded-[20px]">
-      <div class="py-[80px] px-10 lg:px-[220px] text-center">
+      <div class="py-[80px] px-5 sm:px-10 lg:px-[220px] text-center">
         <div class="relative inline-block">
           <h1 class="text-white text-[36px] font-semibold font-[Cabin]">
             Wil jij graag op de hoogte blijven van ons laatste nieuws?
@@ -17,7 +17,7 @@
             </div>
           </h1>
         </div>
-        <p class="text-[20px] text-white pt-[30px] px-16">
+        <p class="text-[20px] text-white pt-[30px] sm:px-16">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua.

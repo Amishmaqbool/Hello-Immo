@@ -1,6 +1,6 @@
 <template>
   <div class="2xl:max-w-[1640px] container mx-auto sm:py-40 py-10">
-    <div class="sm:flex justify-between px-5 sm:px-9 sm:pb-10 items-center">
+    <div class="sm:flex justify-between sm:py-0 py-5  px-5 sm:px-9 sm:pb-10 items-center">
       <p
         class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
       >
@@ -10,7 +10,9 @@
     </div>
     <carousel :items-to-show="3" :itemsToScroll="3" :breakpoints="breakpoints">
       <slide v-for="(slide, index) in slides" :key="index" class="">
-        <div class="rounded-2xl w-[520px] h-[400px] relative">
+        <div
+          class="rounded-2xl w-[80%] xl:w-[400px] 2xl:w-[520px] h-full 2xl:h-[400px] relative"
+        >
           <div
             class="bg-gradient-to-b from-gray-300 via-slate-700 to-black h-full absolute opacity-60 w-full rounded-2xl lg:py-0 py-10"
           ></div>
@@ -27,7 +29,7 @@
             }}</span>
           </div>
           <p
-            class="text-white lg:text-[28px] font-bold text-left lg:pl-3 py-5 absolute bottom-0 shadow-lg w-[90%]"
+            class="text-white lg:text-[20px] xl:text-[28px] font-bold text-left px-4 lg:pl-3 py-5 absolute bottom-0 shadow-lg w-[90%]"
           >
             {{ slide.text }}
           </p>
