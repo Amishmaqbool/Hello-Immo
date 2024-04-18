@@ -1,5 +1,5 @@
 <template>
-    <div class="inline-flex rounded-full bg-white py-1 pl-1 pr-1 shadow-sm">
+    <div class="inline-flex rounded-full bg-white py-1 pl-1 pr-1 shadow-sm border-[#023047] border border-opacity-[.27]">
       <button
         :class="isForSale ? 'bg-red-600 text-white' : 'text-gray-600 bg-white'"
         class="px-4 py-[2px] lg:py-2 rounded-full focus:outline-none transition-colors"

@@ -57,7 +57,7 @@
               </p>
             </div>
 
-            <div class="flex sm:justify-left justify-center">
+            <div class="flex justify-center sm:justify-start">
               <button
                 class="bg-[#034465] text-white font-medium text-[22px] rounded-[25px] px-7 py-2 mt-8 flex gap-3 items-center"
               >

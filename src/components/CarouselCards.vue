@@ -111,7 +111,7 @@ export default {
 					snapAlign: "start"
 				},
 				// 1024 and up
-				1024: {
+				1100: {
 					itemsToShow: 3,
 					snapAlign: "start"
 				}

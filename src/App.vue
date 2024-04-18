@@ -10,7 +10,9 @@ import NewsCardsCarousal from "./components/NewsCardsCarousal.vue";
 
 <template>
   <div>
-    <TopBanner />
+    <div class="lg:block hidden">
+      <TopBanner />
+    </div>
     <HeroSection />
     <div class="bg-[#F4F4F4]">
       <CarouselCards />
