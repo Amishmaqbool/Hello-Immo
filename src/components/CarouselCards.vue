@@ -10,7 +10,9 @@
     </div>
     <carousel :breakpoints="breakpoints">
       <slide v-for="(slide, index) in slides" :key="index" class="">
-        <div class="bg-white rounded-2xl w-[90%] sm:w-[510px] h-full flex flex-col justify-between  relative">
+        <div
+          class="bg-white rounded-2xl mx-2 w-[90%] sm:w-[510px] h-full flex flex-col justify-between relative"
+        >
           <img
             :src="slide.image"
             :alt="'Image ' + (index + 1)"
@@ -40,14 +42,12 @@
             />
           </div>
           <div>
-            <p
-              class="text-[#023047] text-[28px] font-bold px-8 text-left py-5"
-            >
+            <p class="text-[#023047] text-[28px] font-bold px-8 text-left py-5">
               {{ slide.text }}
             </p>
           </div>
           <div class="flex max-xl:flex-col gap-8 px-8 pb-6">
-            <div class="flex gap-2 ">
+            <div class="flex gap-2">
               <img
                 src="../assets/locationicon.svg"
                 alt="location"
@@ -234,10 +234,10 @@ export default {
   background-color: #023047 !important;
 }
 .carousel__next {
-    top: 30%;
+  top: 30%;
 }
 .carousel__prev {
-    top: 30%;
+  top: 30%;
 }
 
 .carousel__pagination-item {

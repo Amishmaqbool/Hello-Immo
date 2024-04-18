@@ -5,7 +5,7 @@
         <div class="flex justify-between xl:gap-[18px] items-center">
           <img src="/Logo.svg" alt="" class="sm:w-auto w-[200px]" />
           <div class="z-50 flex gap-2 items-center">
-            <div class="sm:block hidden">
+            <div class="hlock">
               <ToggleSwitch />
             </div>
             <div class="xl:hidden">
@@ -109,8 +109,8 @@ const toggleMobileMenu = () => {
 };
 
 export default {
-  name: 'Navbar'
-}
+  name: "Navbar",
+};
 </script>
 
 <style scoped>
