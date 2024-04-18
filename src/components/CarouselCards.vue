@@ -1,5 +1,5 @@
 <template>
-  <div class="2xl:max-w-[1640px] container mx-auto sm:py-40 py-10">
+  <div class="2xl:max-w-[1640px] container mx-auto sm:pb-28 sm:pt-40 py-10">
     <div class="sm:flex justify-between px-5 sm:px-4 sm:pb-10 items-center">
       <p
         class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"

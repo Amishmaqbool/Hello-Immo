@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto sm:px-0 px-5 xl:w-[1360px] pt-20">
+  <div class="container mx-auto sm:mb-40 sm:px-0 px-5 xl:w-[1360px] pt-20">
     <div class="bg-[#034465] rounded-[20px]">
       <div class="py-[80px] px-5 sm:px-10 lg:px-[220px] text-center">
         <div class="relative inline-block">
@@ -17,14 +17,14 @@
             </div>
           </h1>
         </div>
-        <p class="text-[20px] text-white pt-[30px] sm:px-16">
+        <p class="text-[20px] text-white pt-[30px] sm:px-12">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua.
         </p>
         <div class="pt-[40px] sm:flex items-center justify-center gap-[18px]">
           <input
-            class="rounded-[30px] px-4 py-3 text-[20px] placeholder-[#023047] font-semibold sm:w-[380px]"
+            class="rounded-[30px] px-6 py-3 text-[20px] placeholder-[#023047] font-semibold sm:w-[380px]"
             placeholder="E-mailadres"
           />
           <button

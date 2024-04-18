@@ -1,40 +1,83 @@
 <script setup>
-import ToggleSwitch from '../ToggleSwitch.vue';
-
+import ToggleSwitch from "../ToggleSwitch.vue";
 </script>
 
 <template>
   <div>
-    <div class="mt-[160px] bg-[#F4F4F4] rounded-t-[60px]">
+    <div class="bg-[#F4F4F4] rounded-t-[60px]">
       <div class="px-5 md:px-6 lg:px-0 2xl:max-w-[1640px] mx-auto container">
         <div class="flex flex-col lg:flex-row justify-between">
-        <div class="pt-[60px] lg:pt-[0px]">
-          <img class="mb-8 cursor-pointer h-12 lg:h-full w-64 lg:w-full" src="/Logo.svg" alt="Logo" />
-          <ToogleSwitch />
-        </div>
-          <div class="flex flex-col sm:flex-row xl:grid gap-8 sm:gap-8 md:gap-7 lg:gap-[50px] xl:gap-[70px] grid-cols-3 pt-[35px] md:pt-[75px] lg:pt-[105px]">
+          <div class="pt-[60px] lg:pt-[90px]">
+            <img
+              class="mb-8 cursor-pointer h-12 h-[60px] w-64 lg:w-full"
+              src="/Logo.svg"
+              alt="Logo"
+            />
+            <ToggleSwitch />
+          </div>
+          <div
+            class="flex flex-col sm:flex-row xl:grid gap-8 sm:gap-8 md:gap-24 lg:gap-[50px] xl:gap-[70px] grid-cols-3 pt-[35px] md:pt-[75px] lg:pt-[105px]"
+          >
             <div class="text-[#023047] leading-tight">
-              <h6 class="font-medium text-[20px] lg:text-[24px]  text-[#023047]">Menu</h6>
-              <p class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer  text-[#023047]">Nieuws</p>
-              <p class="font-normal text-4 lg:text-[20px] cursor-pointer  text-[#023047]">Over ons</p>
-              <p class="font-normal text-4 lg:text-[20px] cursor-pointer  text-[#023047]">Contact</p>
+              <h6 class="font-medium text-[20px] lg:text-[24px] text-[#023047]">
+                Menu
+              </h6>
+              <p
+                class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer text-[#023047]"
+              >
+                Nieuws
+              </p>
+              <p
+                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047]"
+              >
+                Over ons
+              </p>
+              <p
+                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047]"
+              >
+                Contact
+              </p>
             </div>
 
             <div class="text-[#023047] leading-tight">
-              <h6 class="font-medium text-[20px] lg:text-[24px]  text-[#023047]">Panden te koop</h6>
-              <p class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer  text-[#023047]">Huis</p>
-              <p class="font-normal text-4 lg:text-[20px] cursor-pointer  text-[#023047]">Appartement</p>
-              <p class="font-normal text-4 lg:text-[20px] cursor-pointer  text-[#023047]">Nieuwbouwproject</p>
-              <p class="font-normal text-4 lg:text-[20px] cursor-pointer  text-[#023047]">Kantoor</p>
+              <h6 class="font-medium text-[20px] lg:text-[24px] text-[#023047]">
+                Panden te koop
+              </h6>
+              <p
+                class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer text-[#023047]"
+              >
+                Huis
+              </p>
+              <p
+                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047]"
+              >
+                Appartement
+              </p>
+              <p
+                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047]"
+              >
+                Nieuwbouwproject
+              </p>
+              <p
+                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047]"
+              >
+                Kantoor
+              </p>
             </div>
 
             <div class="text-[#023047]">
-              <h6 class="pr-0 lg:pr-[40px] font-medium text-[20px] lg:text-[24px]">Hypotheeklening</h6>
+              <h6
+                class="pr-0 lg:pr-[40px] font-medium text-[20px] lg:text-[24px]"
+              >
+                Hypotheeklening
+              </h6>
             </div>
           </div>
         </div>
 
-        <div class="pt-[100px] lg:pt-[150px] pb-[30px] flex justify-between flex-wrap items-center">
+        <div
+          class="pt-[100px] lg:pt-[150px] pb-[30px] flex justify-between flex-wrap items-center"
+        >
           <div class="flex gap-[37px]">
             <p
               class="font-normal text-4 lg:text-[20px] text-[#023047] cursor-pointer opacity-[0.50]"
@@ -47,7 +90,9 @@ import ToggleSwitch from '../ToggleSwitch.vue';
               Cookiestatement
             </p>
           </div>
-          <p class="font-normal text-4 lg:text-[20px] text-[#023047] opacity-[0.50]">
+          <p
+            class="font-normal text-4 lg:text-[20px] text-[#023047] opacity-[0.50]"
+          >
             Madeby
           </p>
         </div>
@@ -58,6 +103,6 @@ import ToggleSwitch from '../ToggleSwitch.vue';
 
 <script>
 export default {
-  name: 'Footer'
-}
+  name: "Footer",
+};
 </script>

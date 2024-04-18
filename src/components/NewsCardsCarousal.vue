@@ -1,5 +1,5 @@
 <template>
-  <div class="2xl:max-w-[1640px] container mx-auto sm:py-40 py-10">
+  <div class="2xl:max-w-[1640px] container mx-auto sm:pt-40 py-10">
     <div class="sm:flex justify-between px-5 sm:px-4 sm:pb-10 items-center">
       <p
         class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
@@ -59,19 +59,19 @@ export default {
   },
   data() {
     return {
-       breakpoints: {
+      breakpoints: {
         300: {
           itemsToShow: 1,
-          itemsToScroll:1,
+          itemsToScroll: 1,
         },
         640: {
           itemsToShow: 2,
-          itemsToScroll:2,
+          itemsToScroll: 2,
           snapAlign: "start",
         },
         1100: {
           itemsToShow: 3,
-          itemsToScroll:4,
+          itemsToScroll: 4,
         },
       },
       slides: [
@@ -135,16 +135,15 @@ export default {
   background-color: #023047 !important;
 }
 .carousel__next {
-    top: 30%;
+  top: 30%;
 }
 .carousel__prev {
-    top: 30%;
+  top: 30%;
 }
-
 
 @media screen and (max-width: 1099px) {
-.carousel__pagination-item {
-  display: list-item !important;
-}
+  .carousel__pagination-item {
+    display: list-item !important;
+  }
 }
 </style>

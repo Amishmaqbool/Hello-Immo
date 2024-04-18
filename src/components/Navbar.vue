@@ -1,11 +1,13 @@
 <template>
-  <div class="2xl:max-w-[1640px] container px-5 sm:px-0 sm:mx-auto pt-[30px]">
+  <div :class="{'2xl:max-w-[1640px] container px-5 sm:px-0 sm:mx-auto': true, 'pt-[30px]': !isSearchPage, 'py-[20px]': isSearchPage}">
     <nav>
       <div class="xl:flex justify-between">
         <div class="flex justify-between xl:gap-[18px] items-center">
-          <img src="/Logo.svg" alt="" class="sm:w-auto w-[200px]" />
+          <a href="/">
+            <img src="/Logo.svg" alt="" class="sm:w-auto w-[200px]" />
+          </a>
           <div class="z-50 flex gap-2 items-center">
-            <div class="hlock">
+            <div class="sm:block hidden">
               <ToggleSwitch />
             </div>
             <div class="xl:hidden">
@@ -24,9 +26,7 @@
             <p class="font-medium text-[22px] text-[#023047] cursor-pointer">
               Hypotheeklening
             </p>
-            <div
-              class="px-7 py-3 flex items-center gap-3 rounded-full cursor-pointer bg-[#034465]"
-            >
+            <div class="px-7 py-3 flex items-center gap-3 rounded-full cursor-pointer bg-[#034465]">
               <p class="font-semibold text-[22px] text-white">Contacteer ons</p>
               <img src="/ArrowRightWhite.svg" alt="" />
             </div>
@@ -98,18 +98,31 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import { useRoute } from "vue-router"; // Import useRoute from vue-router
 import ToggleSwitch from "./ToggleSwitch.vue";
-
-const isMobileMenuOpen = ref(false);
-
-const toggleMobileMenu = () => {
-  isMobileMenuOpen.value = !isMobileMenuOpen.value;
-  document.body.style.overflow = isMobileMenuOpen.value ? "hidden" : "visible";
-};
 
 export default {
   name: "Navbar",
+  components: {
+    ToggleSwitch,
+  },
+  setup() {
+    const isMobileMenuOpen = ref(false);
+    const route = useRoute(); // Get the current route
+    const isSearchPage = computed(() => route.path === '/search'); // Check if it's the search page
+
+    const toggleMobileMenu = () => {
+      isMobileMenuOpen.value = !isMobileMenuOpen.value;
+      document.body.style.overflow = isMobileMenuOpen.value ? "hidden" : "visible";
+    };
+
+    return {
+      isMobileMenuOpen,
+      toggleMobileMenu,
+      isSearchPage
+    };
+  },
 };
 </script>
 
