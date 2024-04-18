@@ -74,7 +74,7 @@
       <div class="lg:mt-[-220px] 2xl:mt-[-97px] lg:block hidden w-[940px]">
         <img
           class="bg-transparent 2xl:h-auto h-[800px]"
-          src="/LuxuryHouse.png"
+          src="/LuxuryHouse.webp"
           alt="LuxuryHouse"
         />
       </div>
