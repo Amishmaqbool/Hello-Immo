@@ -5,14 +5,14 @@
     </div>
     <div class="lg:flex items-center gap-20 2xl:justify-between mt-20 2xl:mt-0">
       <div
-        class="2xl:max-w-[720px] px-5 container sm:mx-auto lg:pl-20 2xl:pl-10"
+        class="2xl:max-w-[700px] px-5 container sm:mx-auto lg:pl-20 2xl:pl-10"
       >
         <h1
           class="text-[40px] sm:text-[56px] text-[#023047] helvatica-Bold leading-[60px] 2xl:w-[85%]"
         >
           Wij helpen je een thuis vinden én financieren
         </h1>
-        <p class="text-[#023047] text-[20px] pt-2 w-full">
+        <p class="text-[#023047] text-[20px] pt-2 2xl:w-[720px]">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
         </p>

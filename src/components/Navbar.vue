@@ -5,7 +5,7 @@
         <div class="flex justify-between xl:gap-[18px] items-center">
           <img src="/Logo.svg" alt="" class="sm:w-auto w-[200px]" />
           <div class="z-50 flex gap-2 items-center">
-            <div class="hlock">
+            <div class="">
               <ToggleSwitch />
             </div>
             <div class="xl:hidden">
@@ -99,17 +99,28 @@
 
 <script>
 import { ref } from "vue";
-import ToggleSwitch from "./ToggleSwitch.vue";
-
-const isMobileMenuOpen = ref(false);
-
-const toggleMobileMenu = () => {
-  isMobileMenuOpen.value = !isMobileMenuOpen.value;
-  document.body.style.overflow = isMobileMenuOpen.value ? "hidden" : "visible";
-};
+import ToggleSwitch from "./ToggleSwitch.vue"; // Ensure the path is correct
 
 export default {
   name: "Navbar",
+  components: {
+    ToggleSwitch, // Declare the component here
+  },
+  setup() {
+    const isMobileMenuOpen = ref(false);
+
+    const toggleMobileMenu = () => {
+      isMobileMenuOpen.value = !isMobileMenuOpen.value;
+      document.body.style.overflow = isMobileMenuOpen.value
+        ? "hidden"
+        : "visible";
+    };
+
+    return {
+      isMobileMenuOpen,
+      toggleMobileMenu,
+    };
+  },
 };
 </script>
 

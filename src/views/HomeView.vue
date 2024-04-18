@@ -11,9 +11,6 @@ import Layout from "../components/layout/Layout.vue";
 <template>
   <div>
     <Layout>
-      <!-- <div class="lg:block hidden">
-      <TopBanner />
-    </div> -->
       <div class="">
         <HeroSection />
       </div>
@@ -21,9 +18,7 @@ import Layout from "../components/layout/Layout.vue";
         <CarouselCards />
       </div>
       <MortageLoan />
-      <div class="bg-[#F4F4F4]">
-        <NewsCardsCarousal />
-      </div>
+      <NewsCardsCarousal />
       <SignupNewsletter />
     </Layout>
   </div>
