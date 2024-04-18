@@ -29,11 +29,11 @@
             }}</span>
           </div>
           <div
-            class="bg-[#96a6af] border-[#023047] w-fit p-2 rounded-full absolute top-2 right-4"
+            class="bg-[#96a6af] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4"
             @click="toggleHeart(slide)"
           >
             <img
-              src="../assets/hearticon.svg"
+              src="../assets/heart-outline.svg"
               alt="heart"
               class="h-[14px] w-[14px]"
               :class="{ 'bg-red-500': slide.heartClicked }"

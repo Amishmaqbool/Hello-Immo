@@ -13,8 +13,10 @@ import NewsCardsCarousal from "./components/NewsCardsCarousal.vue";
     <div class="lg:block hidden">
       <TopBanner />
     </div>
-    <HeroSection />
-    <div class="bg-[#F4F4F4]">
+    <div class="">
+      <HeroSection />
+    </div>
+    <div class="bg-[#F4F4F4] 2xl:mt-[-30px]">
       <CarouselCards />
     </div>
     <MortageLoan />
