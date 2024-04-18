@@ -2,6 +2,7 @@
 import ToggleSwitch from '../ToggleSwitch.vue';
 
 </script>
+
 <template>
   <div>
     <div class="mt-[160px] bg-[#F4F4F4] rounded-t-[60px]">
