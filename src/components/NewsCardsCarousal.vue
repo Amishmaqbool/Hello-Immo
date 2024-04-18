@@ -8,7 +8,7 @@
       </p>
       <p class="text-[#023047] text-[20px] font-normal">Bekijk alle artikels</p>
     </div>
-    <carousel :items-to-show="3" :itemsToScroll="3" :breakpoints="breakpoints">
+    <carousel :breakpoints="breakpoints">
       <slide v-for="(slide, index) in slides" :key="index" class="">
         <div
           class="rounded-2xl w-[80%] xl:w-[400px] 2xl:w-[520px] h-full 2xl:h-[400px] relative"
@@ -59,20 +59,19 @@ export default {
   },
   data() {
     return {
-      breakpoints: {
-        // 700px and up
+       breakpoints: {
         300: {
           itemsToShow: 1,
-          snapAlign: "center",
+          itemsToScroll:1,
         },
-        600: {
+        640: {
           itemsToShow: 2,
+          itemsToScroll:2,
           snapAlign: "start",
         },
-        // 1024 and up
-        1024: {
+        1100: {
           itemsToShow: 3,
-          snapAlign: "start",
+          itemsToScroll:4,
         },
       },
       slides: [
@@ -141,14 +140,7 @@ export default {
 .carousel__prev {
     top: 30%;
 }
-.carousel__pagination-item {
-  display: none;
-}
-.carousel__pagination-item:first-child,
-.carousel__pagination-item:nth-child(3n + 4),
-.carousel__pagination-item:last-child {
-  display: list-item;
-}
+
 
 @media screen and (max-width: 1099px) {
 .carousel__pagination-item {

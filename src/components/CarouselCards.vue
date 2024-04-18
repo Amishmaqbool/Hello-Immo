@@ -8,7 +8,7 @@
       </p>
       <p class="text-[#023047] text-[20px] font-normal">Bekijk alle panden</p>
     </div>
-    <carousel :items-to-show="3" :itemsToScroll="3" :breakpoints="breakpoints">
+    <carousel :breakpoints="breakpoints">
       <slide v-for="(slide, index) in slides" :key="index" class="">
         <div class="bg-white rounded-2xl w-[90%] sm:w-[510px] h-full flex flex-col justify-between  relative">
           <img
@@ -107,14 +107,18 @@ export default {
   data() {
     return {
       breakpoints: {
-        0: {
+        300: {
           itemsToShow: 1,
+          itemsToScroll:1,
         },
         640: {
           itemsToShow: 2,
+          itemsToScroll:2,
+          snapAlign: "start",
         },
         1100: {
           itemsToShow: 3,
+          itemsToScroll:4,
         },
       },
       slides: [
@@ -146,6 +150,33 @@ export default {
           heartClicked: false,
         },
 
+        {
+          image: image2,
+          text: "Huis te koop Antwerpen - Zuid",
+          location: "Vissersstraat 4",
+          scale: "220m<sub>2</sub>",
+          bed: "3",
+          price: "€ 345.500",
+          heartClicked: false,
+        },
+        {
+          image: image5,
+          text: "Huis to koop Westmalle",
+          location: "Vissersstraat 4",
+          scale: "220m<sub>2</sub>",
+          bed: "3",
+          price: "€ 345.500",
+          heartClicked: false,
+        },
+        {
+          image: image,
+          text: "Huis te koop Beerse",
+          location: "Vissersstraat 4",
+          scale: "220m<sub>2</sub>",
+          bed: "3",
+          price: "€ 345.500",
+          heartClicked: false,
+        },
         {
           image: image2,
           text: "Huis te koop Antwerpen - Zuid",
@@ -212,13 +243,13 @@ export default {
 .carousel__pagination-item {
   display: none;
 }
-.carousel__pagination-item:first-child,
-.carousel__pagination-item:nth-child(3n + 4),
-.carousel__pagination-item:last-child {
+
+.carousel__pagination-item:nth-child(1),
+.carousel__pagination-item:nth-child(3n+5)  {
   display: list-item;
 }
 
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 600px) {
 .carousel__pagination-item {
   display: list-item !important;
 }
