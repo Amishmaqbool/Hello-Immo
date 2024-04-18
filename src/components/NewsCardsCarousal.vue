@@ -135,4 +135,24 @@ export default {
 .carousel__pagination-button--active {
   background-color: #023047 !important;
 }
+.carousel__next {
+    top: 30%;
+}
+.carousel__prev {
+    top: 30%;
+}
+.carousel__pagination-item {
+  display: none;
+}
+.carousel__pagination-item:first-child,
+.carousel__pagination-item:nth-child(3n + 4),
+.carousel__pagination-item:last-child {
+  display: list-item;
+}
+
+@media screen and (max-width: 1099px) {
+.carousel__pagination-item {
+  display: list-item !important;
+}
+}
 </style>

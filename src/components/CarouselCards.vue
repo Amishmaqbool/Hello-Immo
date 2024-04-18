@@ -10,7 +10,7 @@
     </div>
     <carousel :items-to-show="3" :itemsToScroll="3" :breakpoints="breakpoints">
       <slide v-for="(slide, index) in slides" :key="index" class="">
-        <div class="bg-white rounded-2xl w-[95%] relative h-full">
+        <div class="bg-white rounded-2xl w-[90%] sm:w-[95%] h-full flex flex-col justify-between  relative">
           <img
             :src="slide.image"
             :alt="'Image ' + (index + 1)"
@@ -22,7 +22,7 @@
             <span class="text-white text-[18px] font-bold">NIEUW</span>
           </div>
           <div
-            class="bg-[#034465] w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-36 xl:top-44 2xl:top-[16.5rem]"
+            class="bg-[#034465] w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-56 max-[400px]:top-40 xl:top-64 2xl:top-[270px]"
           >
             <span class="text-white font-bold text-[22px]">{{
               slide.price
@@ -46,8 +46,8 @@
               {{ slide.text }}
             </p>
           </div>
-          <div class="lg:flex gap-8 px-8 pb-6">
-            <div class="flex gap-2 items-center">
+          <div class="flex max-xl:flex-col gap-8 px-8 pb-6">
+            <div class="flex gap-2 ">
               <img
                 src="../assets/locationicon.svg"
                 alt="location"
@@ -107,19 +107,14 @@ export default {
   data() {
     return {
       breakpoints: {
-        // 700px and up
-        300: {
+        0: {
           itemsToShow: 1,
-          snapAlign: "center",
         },
-        600: {
+        640: {
           itemsToShow: 2,
-          snapAlign: "start",
         },
-        // 1024 and up
         1100: {
           itemsToShow: 3,
-          snapAlign: "start",
         },
       },
       slides: [
@@ -206,5 +201,26 @@ export default {
 }
 .carousel__pagination-button--active {
   background-color: #023047 !important;
+}
+.carousel__next {
+    top: 30%;
+}
+.carousel__prev {
+    top: 30%;
+}
+
+.carousel__pagination-item {
+  display: none;
+}
+.carousel__pagination-item:first-child,
+.carousel__pagination-item:nth-child(3n + 4),
+.carousel__pagination-item:last-child {
+  display: list-item;
+}
+
+@media screen and (max-width: 1099px) {
+.carousel__pagination-item {
+  display: list-item !important;
+}
 }
 </style>
