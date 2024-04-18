@@ -97,7 +97,7 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import { ref } from "vue";
 import ToggleSwitch from "./ToggleSwitch.vue";
 
@@ -107,6 +107,10 @@ const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
   document.body.style.overflow = isMobileMenuOpen.value ? "hidden" : "visible";
 };
+
+export default {
+  name: 'Navbar'
+}
 </script>
 
 <style scoped>
