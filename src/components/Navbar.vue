@@ -20,10 +20,10 @@
 
         <div class="z-50 xl:block hidden">
           <div class="flex items-center gap-4 2xl:gap-[43px]">
-            <p class="font-medium text-[22px] text-[#023047] cursor-pointer">
+            <p class="font-medium text-[24px] text-[#023047] cursor-pointer">
               Panden te koop
             </p>
-            <p class="font-medium text-[22px] text-[#023047] cursor-pointer">
+            <p class="font-medium text-[24px] text-[#023047] cursor-pointer">
               Hypotheeklening
             </p>
             <div class="px-7 py-3 flex items-center gap-3 rounded-full cursor-pointer bg-[#034465]">

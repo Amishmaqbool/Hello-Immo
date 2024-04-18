@@ -22,7 +22,7 @@
             class="lg:object-fill h-full"
           />
           <div
-            class="bg-[#034465] lg:w-fit px-3 py-1 rounded-[20px] absolute left-3 top-7"
+            class="bg-[#034465] lg:w-fit px-4 pt-[7px] pb-1 rounded-[20px] absolute left-3 top-7"
           >
             <span class="text-white text-[18px] font-bold">{{
               slide.date

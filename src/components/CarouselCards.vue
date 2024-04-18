@@ -37,12 +37,12 @@
             <img
               src="../assets/heart-outline.svg"
               alt="heart"
-              class="h-[14px] w-[14px]"
+              class="h-[30px] w-[30px]"
               :class="{ 'bg-red-500': slide.heartClicked }"
             />
           </div>
           <div>
-            <p class="text-[#023047] text-[28px] font-bold px-8 text-left py-5">
+            <p class="text-[#023047] text-[28px] font-bold px-8 text-left pt-5 pb-3">
               {{ slide.text }}
             </p>
           </div>
