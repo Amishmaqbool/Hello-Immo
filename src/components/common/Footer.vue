@@ -1,5 +1,6 @@
 <script setup>
-import ToogleSwitch from "../components/ToggleSwitch.vue";
+import ToggleSwitch from '../ToggleSwitch.vue';
+
 </script>
 <template>
   <div>
@@ -53,3 +54,9 @@ import ToogleSwitch from "../components/ToggleSwitch.vue";
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Footer'
+}
+</script>

@@ -1,18 +1,19 @@
 <script setup>
 import CarouselCards from "./components/CarouselCards.vue";
-import TopBanner from "./components/TopBanner.vue";
+import TopBanner from "./components/common/TopBanner.vue";
 import SignupNewsletter from "./components/SignupNewsletter.vue";
-import Footer from "./components/Footer.vue";
 import MortageLoan from "./components/MortageLoan.vue";
 import HeroSection from "./components/HeroSection.vue";
 import NewsCardsCarousal from "./components/NewsCardsCarousal.vue";
+import Layout from "./components/layout/Layout.vue";
 </script>
 
 <template>
   <div>
-    <div class="lg:block hidden">
+  <Layout>
+    <!-- <div class="lg:block hidden">
       <TopBanner />
-    </div>
+    </div> -->
     <div class="">
       <HeroSection />
     </div>
@@ -24,7 +25,7 @@ import NewsCardsCarousal from "./components/NewsCardsCarousal.vue";
       <NewsCardsCarousal />
     </div>
     <SignupNewsletter />
-    <Footer />
+</Layout>
   </div>
 </template>
 
