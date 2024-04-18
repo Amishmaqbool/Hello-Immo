@@ -41,7 +41,7 @@
           </div>
           <div>
             <p
-              class="text-[#023047] text-[28px] font-bold px-10 text-left py-5"
+              class="text-[#023047] text-[28px] font-bold px-8 text-left py-5"
             >
               {{ slide.text }}
             </p>
