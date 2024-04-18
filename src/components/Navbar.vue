@@ -1,9 +1,9 @@
 <template>
-  <div class="2xl:max-w-[1640px] container mx-auto pt-[38px]">
+  <div class="2xl:max-w-[1640px] container px-5 sm:px-0 sm:mx-auto pt-[38px]">
     <nav>
       <div class="xl:flex justify-between">
         <div class="flex justify-between xl:gap-[18px] items-center">
-          <img src="/Logo.svg" alt="" class="" />
+          <img src="/Logo.svg" alt="" class="sm:w-auto w-[200px]" />
           <div class="z-50 flex gap-2 items-center">
             <div class="sm:block hidden">
               <ToggleSwitch />

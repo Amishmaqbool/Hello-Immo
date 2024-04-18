@@ -4,7 +4,7 @@ import ToogleSwitch from "../components/ToggleSwitch.vue";
 <template>
   <div>
     <div class="mt-[160px] bg-[#F4F4F4] rounded-t-[60px]">
-      <div class="px-5 md:px-6 lg:px-0 lg:container mx-auto">
+      <div class="px-5 md:px-6 lg:px-0 2xl:max-w-[1640px] mx-auto container">
         <div class="flex flex-col lg:flex-row justify-between">
         <div class="pt-[60px] lg:pt-[0px]">
           <img class="mb-8 cursor-pointer h-12 lg:h-full w-64 lg:w-full" src="/Logo.svg" alt="Logo" />

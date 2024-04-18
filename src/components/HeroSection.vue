@@ -4,9 +4,9 @@
       <Navbar />
     </div>
     <div class="lg:flex items-center gap-20 2xl:justify-between mt-20 2xl:mt-0">
-      <div class="2xl:max-w-[700px] mx-5 lg:mx-auto lg:pl-20 2xl:pl-16">
+      <div class="2xl:max-w-[700px] px-5 container sm:mx-auto lg:pl-20 2xl:pl-10">
         <h1
-          class="text-[40px] sm:text-[56px] text-[#023047] font-[Cabin] font-bold leading-[60px] 2xl:w-[70%]"
+          class="text-[40px] sm:text-[56px] text-[#023047] helvatica-Bold leading-[60px] 2xl:w-[75%]"
         >
           Wij helpen je een thuis vinden én financieren
         </h1>
@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <div class="lg:mt-[-220px] 2xl:mt-[-97px] lg:block hidden w-[1000px]">
+      <div class="lg:mt-[-220px] 2xl:mt-[-97px] lg:block hidden w-[940px]">
         <img
           class="bg-transparent 2xl:h-auto h-[800px]"
           src="/LuxuryHouse.png"

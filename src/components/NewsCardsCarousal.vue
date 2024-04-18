@@ -1,14 +1,16 @@
 <template>
   <div class="2xl:max-w-[1640px] container mx-auto sm:py-40 py-10">
     <div class="sm:flex justify-between px-5 sm:px-9 sm:pb-10 items-center">
-      <p class="text-[28px] sm:text-5xl text-[#023047] font-bold">
+      <p
+        class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
+      >
         Laatste nieuws
       </p>
-      <p class="text-[#023047] text-xl font-normal">Bekijk alle artikels</p>
+      <p class="text-[#023047] text-[20px] font-normal">Bekijk alle artikels</p>
     </div>
     <carousel :items-to-show="3" :itemsToScroll="3" :breakpoints="breakpoints">
       <slide v-for="(slide, index) in slides" :key="index" class="">
-        <div class="rounded-2xl w-[85%] h-full relative">
+        <div class="rounded-2xl w-[520px] h-[400px] relative">
           <div
             class="bg-gradient-to-b from-gray-300 via-slate-700 to-black h-full absolute opacity-60 w-full rounded-2xl lg:py-0 py-10"
           ></div>
@@ -18,12 +20,14 @@
             class="lg:object-fill h-full"
           />
           <div
-            class="bg-[#034465] lg:w-fit px-3 py-1 rounded-full absolute left-3 top-5"
+            class="bg-[#034465] lg:w-fit px-3 py-1 rounded-[20px] absolute left-3 top-7"
           >
-            <span class="text-white">{{ slide.date }}</span>
+            <span class="text-white text-[18px] font-bold">{{
+              slide.date
+            }}</span>
           </div>
           <p
-            class="text-white lg:text-2xl font-bold text-left lg:pl-3 py-5 absolute bottom-0 shadow-lg"
+            class="text-white lg:text-[28px] font-bold text-left lg:pl-3 py-5 absolute bottom-0 shadow-lg w-[90%]"
           >
             {{ slide.text }}
           </p>
@@ -40,12 +44,9 @@
 <script>
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
-import image from "../assets/european.png";
-import image2 from "../assets/image2webp.webp";
-import image3 from "../assets/image3.webp";
-import image4 from "../assets/image4.webp";
-import image5 from "../assets/image5.webp";
-import image6 from "../assets/image.png";
+import image2 from "../assets/house1.png";
+import image5 from "../assets/house4.webp";
+import image7 from "../assets/house6.webp";
 export default {
   name: "NewsCardsCarousal",
   components: {
@@ -74,32 +75,32 @@ export default {
       },
       slides: [
         {
-          image: image,
-          text: "Belangrijke juridische overwegingen bij het kopen van vastgoed.",
+          image: image5,
+          text: "De huidige vastgoedmarkt: trends en prognoses.",
           date: "03.07.22",
         },
         {
-          image: image6,
-          text: "Belangrijke juridische overwegingen bij het kopen van vastgoed.",
-          date: "03.07.22",
-        },
-        {
-          image: image4,
+          image: image7,
           text: "Belangrijke juridische overwegingen bij het kopen van vastgoed.",
           date: "03.07.22",
         },
         {
           image: image2,
-          text: "Belangrijke juridische overwegingen bij het kopen van vastgoed.",
+          text: "Het belang van een goede eerste indruk bij het bezichtigen van huizen.",
           date: "03.07.22",
         },
         {
           image: image5,
-          text: "Belangrijke juridische overwegingen bij het kopen van vastgoed.",
+          text: "De huidige vastgoedmarkt: trends en prognoses.",
           date: "03.07.22",
         },
         {
-          image: image3,
+          image: image2,
+          text: "Het belang van een goede eerste indruk bij het bezichtigen van huizen.",
+          date: "03.07.22",
+        },
+        {
+          image: image7,
           text: "Belangrijke juridische overwegingen bij het kopen van vastgoed.",
           date: "03.07.22",
         },

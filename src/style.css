@@ -10,6 +10,22 @@
   font-family: "Helvatica";
   src: url("@/assets/Helvetica.ttf") format("opentype");
 }
+@font-face {
+  font-family: "Helvatica";
+  src: url("./assets/Helvetica-ExtraBold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Helvatica";
+  src: url("./assets/Helvetica-Bold-Font.ttf") format("opentype");
+}
+.helvatica-Bold {
+  font-family: "Helvatica";
+  font-weight: 800;
+}
+.helvatica-Extrabold {
+  font-family: "Helvatica";
+  font-weight: 900;
+}
 body {
   font-family: "Avenir";
 }

@@ -17,14 +17,14 @@
             </div>
           </h1>
         </div>
-        <p class="text-[20px] text-white pt-[36px]">
+        <p class="text-[20px] text-white pt-[30px] px-16">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua.
         </p>
         <div class="pt-[40px] sm:flex items-center justify-center gap-[18px]">
           <input
-            class="rounded-full px-4 py-2 sm:w-[380px] text-[#023047]"
+            class="rounded-[30px] px-4 py-3 text-[20px] placeholder-[#023047] font-semibold sm:w-[380px]"
             placeholder="E-mailadres"
           />
           <button
