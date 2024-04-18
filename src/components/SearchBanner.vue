@@ -58,8 +58,8 @@
 
     <div>
             <select
-              class="mt-5 block xl:hidden custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[100%] sm:w-[50%] xl:w-[25%] font-[500] text-[20px] text-[#023047]"
-              v-model="selected"
+              class="mt-5 block xl:hidden custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[100%] sm:w-[70%] xl:w-[25%] font-[500] text-[20px] text-[#023047]"
+              v-model="selectedOption"
             >
               <option disabled value="Gemeente of postcode">Gemeente of postcode</option>
               <option value="Option 1">Option 1</option>
@@ -70,8 +70,8 @@
             </select>
 
               <select
-                class="mt-5 block xl:hidden custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[100%] sm:w-[50%] font-[500] text-[20px] text-[#023047]"
-                v-model="selected2"
+                class="mt-5 block xl:hidden custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[100%] sm:w-[70%] font-[500] text-[20px] text-[#023047]"
+                v-model="selectedOption2"
               >
                 <option disabled value="Huis">Huis</option>
                 <option value="Option 1">Option 1</option>
@@ -79,8 +79,8 @@
               </select>
 
               <select
-                class="block xl:hidden custom-select rounded-[30px] border-[1.5px] mt-5 border-[#023047] px-5 py-2 w-[100%] sm:w-[50%] font-[500] text-[20px] text-[#023047]"
-                v-model="selected3"
+                class="block xl:hidden custom-select rounded-[30px] border-[1.5px] mt-5 border-[#023047] px-5 py-2 w-[100%] sm:w-[70%] font-[500] text-[20px] text-[#023047]"
+                v-model="selectedOption3"
               >
                 <option disabled value="Prijis">Prijis</option>
                 <option value="Option 1">Option 1</option>
@@ -101,7 +101,7 @@ export default {
   },
 };
 
-const selected = ref("");
-const selected2 = ref("");
-const selected3 = ref("");
+const selectedOption = ref("");
+const selectedOption2 = ref("");
+const selectedOption3 = ref("");
 </script>
