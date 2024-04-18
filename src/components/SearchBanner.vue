@@ -3,7 +3,7 @@
     <div
       class="sm:flex items-center justify-between xl:gap-[24px] 2xl:gap-[50px]"
     >
-      <ToggleSwitch class="w-[210px] lg:w-[24%] xl:w-[20%] 2xl:w-[18%]" />
+      <ToggleSwitch class="w-[220px] lg:w-[24%] xl:w-[20%] 2xl:w-[18%]" />
       <select
         class="hidden xl:block custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[22%] xl:w-[25%] font-[500] text-[20px] text-[#023047]"
         v-model="selectedOption"
