@@ -20,9 +20,9 @@
 
         <div class="z-50 xl:block hidden">
           <div class="flex items-center gap-4 2xl:gap-[43px]">
-            <p class="font-medium text-[24px] text-[#023047] cursor-pointer">
+            <router-link to="/search" class="font-medium text-[24px] text-[#023047] cursor-pointer" :class="{ 'border-b-4 border-red-500': isSearchPage }">
               Panden te koop
-            </p>
+            </router-link>
             <p class="font-medium text-[24px] text-[#023047] cursor-pointer">
               Hypotheeklening
             </p>
@@ -50,9 +50,8 @@
           <img src="/Logo.svg" alt="" />
         </div>
         <li>
-          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
-            >Panden te koop</a
-          >
+         <router-link to="/search" class="block px-4 py-2 text-lg font-medium text-[#023047]">Panden te koop</router-link>
+
         </li>
         <li>
           <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
@@ -99,7 +98,7 @@
 
 <script>
 import { ref, computed } from "vue";
-import { useRoute } from "vue-router"; // Import useRoute from vue-router
+import { useRoute } from "vue-router";
 import ToggleSwitch from "./ToggleSwitch.vue";
 
 export default {
@@ -109,8 +108,8 @@ export default {
   },
   setup() {
     const isMobileMenuOpen = ref(false);
-    const route = useRoute(); // Get the current route
-    const isSearchPage = computed(() => route.path === '/search'); // Check if it's the search page
+    const route = useRoute(); 
+    const isSearchPage = computed(() => route.path === '/search'); 
 
     const toggleMobileMenu = () => {
       isMobileMenuOpen.value = !isMobileMenuOpen.value;

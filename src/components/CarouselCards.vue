@@ -6,7 +6,7 @@
       >
         Laatst toegevoegde panden
       </p>
-      <p class="text-[#023047] text-[20px] font-normal">Bekijk alle panden</p>
+      <p class="text-[#023047] text-[20px] font-normal underline">Bekijk alle panden</p>
     </div>
     <carousel :breakpoints="breakpoints">
       <slide v-for="(slide, index) in slides" :key="index" class="">
@@ -31,15 +31,21 @@
             }}</span>
           </div>
           <div
-            class="bg-[#96a6af] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4"
+            class="bg-[#96a6af] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4 cursor-pointer"
             @click="toggleHeart(slide)"
           >
             <img
               src="../assets/heart-outline.svg"
               alt="heart"
               class="h-[30px] w-[30px]"
-              :class="{ 'bg-red-500': slide.heartClicked }"
+              v-if="!slide.heartClicked"
             />
+            <img
+            src="../assets/heart-outlineRed.svg"
+            alt="heart"
+            class="h-[30px] w-[30px] block"
+            v-else
+          />
           </div>
           <div>
             <p class="text-[#023047] text-[28px] font-bold px-8 text-left pt-5 pb-3">

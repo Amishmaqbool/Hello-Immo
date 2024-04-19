@@ -9,10 +9,17 @@
       >
         Huis te koop
       </p>
-      <p class="text-[#023047] text-[20px] font-normal">
-        <span class="opacity-[0.65]">Sorteren op:</span>
-        <span class="pl-2 font-medium">Relevantie</span>
-      </p>
+      <div class="flex items-center text-[#023047] text-[20px] font-normal">
+        <p class="opacity-[0.65]">Sorteren op:</p>
+        <select
+        class="custom-select px-2 w-[150px] font-[500] text-[20px] text-[#023047]"
+        v-model="selected"
+      >
+        <option disabled value="">Relevantie</option>
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+      </select>
+      </div>
     </div>
     <div>
       <vue-awesome-paginate
@@ -47,16 +54,22 @@
               }}</span>
             </div>
             <div
-              class="bg-[#96a6af] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4"
-              @click="toggleHeart(slide)"
-            >
-              <img
-                src="../assets/heart-outline.svg"
-                alt="heart"
-                class="h-[14px] w-[14px]"
-                :class="{ 'bg-red-500': slide.heartClicked }"
-              />
-            </div>
+      class="bg-[#96a6af] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4 cursor-pointer"
+      @click="toggleHeart(index)"
+    >
+      <img
+      src="../assets/heart-outline.svg"
+      alt="heart"
+      class="h-[30px] w-[30px]"
+      v-if="!isHeartClicked(index)"
+    />
+    <img
+    src="../assets/heart-outlineRed.svg"
+    alt="heart"
+    class="h-[30px] w-[30px] block"
+    v-else
+  />
+    </div>
             <div>
               <p
                 class="text-[#023047] text-[28px] font-bold px-8 text-left py-5"
@@ -102,7 +115,7 @@
     <div class="pagination-container flex justify-center py-20">
       <button
         :disabled="currentPage === 1"
-        class="paginate-buttons"
+        class="paginate-buttons cursor-pointer"
         @click="onClickHandler(currentPage - 1)"
       >
         <img src="/ArrowLeft.svg" alt="location" />
@@ -125,7 +138,7 @@
 
       <button
         :disabled="currentPage === totalPages"
-        class="paginate-buttons"
+        class="paginate-buttons cursor-pointer"
         @click="onClickHandler(currentPage + 1)"
       >
         <img src="/ArrowRight.svg" alt="location" />
@@ -226,6 +239,15 @@ const slides = [
     heartClicked: false,
   },
   {
+    image: image3,
+    text: "Huis to koop Westmalle",
+    location: "Vissersstraat 4",
+    scale: "220m<sub>2</sub>",
+    bed: "3",
+    price: "€ 345.500",
+    heartClicked: false,
+  },
+  {
     image: image2,
     text: "Huis te koop Antwerpen - Zuid",
     location: "Vissersstraat 4",
@@ -235,8 +257,8 @@ const slides = [
     heartClicked: false,
   },
   {
-    image: image,
-    text: "Huis te koop Beerse",
+    image: image5,
+    text: "Huis to koop Westmalle",
     location: "Vissersstraat 4",
     scale: "220m<sub>2</sub>",
     bed: "3",
@@ -252,7 +274,6 @@ const slides = [
     price: "€ 345.500",
     heartClicked: false,
   },
-
   {
     image: image2,
     text: "Huis te koop Antwerpen - Zuid",
@@ -272,8 +293,8 @@ const slides = [
     heartClicked: false,
   },
   {
-    image: image,
-    text: "Huis te koop Beerse",
+    image: image3,
+    text: "Huis to koop Westmalle",
     location: "Vissersstraat 4",
     scale: "220m<sub>2</sub>",
     bed: "3",
@@ -292,15 +313,6 @@ const slides = [
   {
     image: image5,
     text: "Huis to koop Westmalle",
-    location: "Vissersstraat 4",
-    scale: "220m<sub>2</sub>",
-    bed: "3",
-    price: "€ 345.500",
-    heartClicked: false,
-  },
-  {
-    image: image,
-    text: "Huis te koop Beerse",
     location: "Vissersstraat 4",
     scale: "220m<sub>2</sub>",
     bed: "3",
@@ -310,12 +322,15 @@ const slides = [
 ];
 
 const currentPage = ref(1);
+const selected = ref("");
 const itemsPerPage = 9;
 const totalPages = Math.ceil(slides.length / itemsPerPage);
 const maxPagesShown = 5;
+const clickedHearts = ref([]);
 
 const onClickHandler = (page) => {
   currentPage.value = page;
+  clickedHearts.value = [];
 };
 
 const displayedSlides = computed(() => {
@@ -324,8 +339,16 @@ const displayedSlides = computed(() => {
   return slides.slice(start, end);
 });
 
-const toggleHeart = (slide) => {
-  slide.heartClicked = !slide.heartClicked;
+const toggleHeart = (index) => {
+  if (clickedHearts.value.includes(index)) {
+    clickedHearts.value = clickedHearts.value.filter((item) => item !== index);
+  } else {
+    clickedHearts.value.push(index);
+  }
+};
+
+const isHeartClicked = (index) => {
+  return clickedHearts.value.includes(index);
 };
 </script>
 
@@ -337,5 +360,6 @@ const toggleHeart = (slide) => {
 .active-page {
   color: #023047;
   font-weight: 900;
+  border-bottom:3px solid red;
 }
 </style>

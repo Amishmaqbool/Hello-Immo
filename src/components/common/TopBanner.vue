@@ -19,9 +19,10 @@
           <div class="pr-2 md:pr-4">
             <p class="text-[20px] text-[#023047] opacity-70">Nieuws</p>
           </div>
-          <div class="pr-8 md:pr-20">
+          <div class="pr-4 md:pr-10 border-r-4 border-[#80939f]">
             <p class="text-[20px] text-[#023047] opacity-70">Over ons</p>
           </div>
+          <div class="mr-4 md:mr-10 "/>
           <div class="flex items-center gap-2">
             <img src="/FeatherUser.svg" width="20" height="20" alt="stars" />
             <p class="text-[20px] text-[#023047] opacity-70 font-medium">Inloggen</p>

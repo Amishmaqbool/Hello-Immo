@@ -6,7 +6,7 @@
       >
         Laatste nieuws
       </p>
-      <p class="text-[#023047] text-[20px] font-normal">Bekijk alle artikels</p>
+      <p class="text-[#023047] text-[20px] font-normal underline">Bekijk alle artikels</p>
     </div>
     <carousel :breakpoints="breakpoints">
       <slide v-for="(slide, index) in slides" :key="index" class="">

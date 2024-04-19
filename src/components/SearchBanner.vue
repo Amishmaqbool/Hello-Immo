@@ -4,17 +4,13 @@
       class="sm:flex items-center justify-between xl:gap-[24px] 2xl:gap-[40px]"
     >
       <ToggleSwitch class="w-[215px] lg:w-[23%] xl:w-[19%] 2xl:w-[15%]" />
-      <select
-        class="hidden xl:block custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[22%] xl:w-[25%] font-[500] text-[20px] text-[#023047]"
+      <input
+        type="text"
         v-model="selectedOption"
-      >
-        <option disabled value="">Gemeente of postcode</option>
-        <option value="Option 1">Option 1</option>
-        <option value="Option 2">Option 2</option>
-        <option value="Option 3">Option 3</option>
-        <option value="Option 4">Option 4</option>
-        <option value="Option 5">Option 5</option>
-      </select>
+        @keyup.enter="addTag"
+        placeholder="Gemeente of postcode"
+        class="rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[22%] xl:w-[25%] font-[500] text-[20px] text-[#023047]"
+      />
 
       <select
         class="hidden xl:block custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[11%] xl:w-[13%] font-[500] text-[20px] text-[#023047]"
@@ -35,14 +31,14 @@
       </select>
 
       <p
-        class="hidden xl:block text-[20px] text-[#023047] w-[15%] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center"
+        class="hidden xl:block text-[20px] text-[#023047] w-[15%] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center underline"
       >
         Meer filters
       </p>
 
       <div class="sm:flex items-center gap-[24px]">
         <p
-          class="block xl:hidden text-[20px] text-[#023047] w-[95px] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center"
+          class="block xl:hidden text-[20px] text-[#023047] w-[95px] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center underline"
         >
           Meer filters
         </p>
@@ -92,12 +88,60 @@
       </select>
     </div>
   </div>
+  <div  class="flex flex-wrap gap-2 mt-[28px]">
+    <div v-if="tags.length > 0" class="flex flex-wrap gap-2">
+    <div
+      v-for="(tag, index) in tags"
+      :key="index"
+      class="flex gap-1 items-center bg-[#e1e5e7] font-medium text-[#023047] text-[18px] px-3 py-1 rounded-[20px] border-[1.5px] border-[#023047]"
+      @click="removeTag(index)"
+    >
+      <img class="h-4 w-4 cursor-pointer" src="/CloseIcon.svg" alt="Close" />
+      {{ tag }}
+    </div>
+  </div>
+    <div
+      class="flex gap-2 items-center bg-[#034465] font-medium text-white text-[18px] px-3 py-1 rounded-[20px] border-[1.5px] border-[#023047]"
+      @click="toggleHeart"
+    >
+      <img
+      src="../assets/heart-outline.svg"
+      alt="heart"
+      class="h-4 w-4 cursor-pointer"
+      v-if="!isHeartActive "
+    />
+    <img
+    src="../assets/heart-outlineRed.svg"
+    alt="heart"
+    class="h-4 w-4 cursor-pointer"
+    v-else
+  />
+      <p>Bewaar zoekactie</p>
+    </div>
+  </div>
 </template>
-
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import ToggleSwitch from "./ToggleSwitch.vue";
+
 const selectedOption = ref("");
 const selectedOption2 = ref("");
 const selectedOption3 = ref("");
+const tags = ref([]);
+const isHeartActive = ref(false);
+
+function addTag() {
+  if (selectedOption.value) {
+    tags.value.push(selectedOption.value);
+    selectedOption.value = "";
+  }
+}
+
+function removeTag(index) {
+  tags.value.splice(index, 1); 
+}
+
+function toggleHeart() {
+  isHeartActive.value = !isHeartActive.value;
+}
 </script>
