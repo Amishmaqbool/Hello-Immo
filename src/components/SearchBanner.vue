@@ -1,16 +1,14 @@
 <template>
   <div class="max-w-[1640px] mx-auto bg-white rounded-[20px] py-9 px-10">
     <div
-      class="sm:flex items-center justify-between xl:gap-[24px] 2xl:gap-[50px]"
+      class="sm:flex items-center justify-between xl:gap-[24px] 2xl:gap-[40px]"
     >
       <ToggleSwitch class="w-[215px] lg:w-[23%] xl:w-[19%] 2xl:w-[15%]" />
       <select
         class="hidden xl:block custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[22%] xl:w-[25%] font-[500] text-[20px] text-[#023047]"
         v-model="selectedOption"
       >
-        <option disabled value="">
-          Gemeente of postcode
-        </option>
+        <option disabled value="">Gemeente of postcode</option>
         <option value="Option 1">Option 1</option>
         <option value="Option 2">Option 2</option>
         <option value="Option 3">Option 3</option>
@@ -51,7 +49,7 @@
 
         <div class="mt-5 sm:mt-0 xl:w-[17%]">
           <button
-            class="w-[175px] bg-[#034465] text-white font-medium text-[22px] rounded-[25px] px-5 py-2 flex gap-4 items-center"
+            class="w-[192px] bg-[#034465] text-white font-medium text-[22px] rounded-[25px] px-5 py-2 flex gap-4 items-center"
           >
             Zoek pand
             <img src="/Search.svg" alt="MortageFamily" />
