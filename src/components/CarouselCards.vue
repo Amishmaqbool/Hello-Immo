@@ -251,7 +251,8 @@ export default {
 }
 
 .carousel__pagination-item:nth-child(1),
-.carousel__pagination-item:nth-child(3n+5)  {
+.carousel__pagination-item:nth-child(5),
+.carousel__pagination-item:nth-child(9) {
   display: list-item;
 }
 

@@ -105,6 +105,21 @@ export default {
           text: "Belangrijke juridische overwegingen bij het kopen van vastgoed.",
           date: "03.07.22",
         },
+        {
+          image: image5,
+          text: "De huidige vastgoedmarkt: trends en prognoses.",
+          date: "03.07.22",
+        },
+        {
+          image: image2,
+          text: "Het belang van een goede eerste indruk bij het bezichtigen van huizen.",
+          date: "03.07.22",
+        },
+        {
+          image: image7,
+          text: "Belangrijke juridische overwegingen bij het kopen van vastgoed.",
+          date: "03.07.22",
+        },
       ],
     };
   },
