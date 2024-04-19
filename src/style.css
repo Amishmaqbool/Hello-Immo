@@ -70,3 +70,8 @@ body {
 .custom-select::-ms-expand {
   display: none;
 }
+@media screen and (max-width: 1135px) {
+  .image-correction{
+    margin-top: -390px !important;
+  }
+}

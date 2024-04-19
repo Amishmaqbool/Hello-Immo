@@ -1,6 +1,6 @@
 <template>
   <div class="2xl:max-w-[1640px] container mx-auto sm:pb-28 sm:pt-40 py-10">
-    <div class="sm:flex justify-between px-5 sm:px-4 sm:pb-10 items-center">
+    <div class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center">
       <p
         class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
       >
@@ -37,12 +37,12 @@
             <img
               src="../assets/heart-outline.svg"
               alt="heart"
-              class="h-[14px] w-[14px]"
+              class="h-[30px] w-[30px]"
               :class="{ 'bg-red-500': slide.heartClicked }"
             />
           </div>
           <div>
-            <p class="text-[#023047] text-[28px] font-bold px-8 text-left py-5">
+            <p class="text-[#023047] text-[28px] font-bold px-8 text-left pt-5 pb-3">
               {{ slide.text }}
             </p>
           </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="2xl:max-w-[1640px] container mx-auto sm:pt-40 py-10">
-    <div class="sm:flex justify-between px-5 sm:px-4 sm:pb-10 items-center">
+    <div class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center">
       <p
         class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
       >
@@ -22,7 +22,7 @@
             class="lg:object-fill h-full"
           />
           <div
-            class="bg-[#034465] lg:w-fit px-3 py-1 rounded-[20px] absolute left-3 top-7"
+            class="bg-[#034465] lg:w-fit px-4 pt-[7px] pb-1 rounded-[20px] absolute left-3 top-7"
           >
             <span class="text-white text-[18px] font-bold">{{
               slide.date

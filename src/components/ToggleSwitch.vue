@@ -1,11 +1,11 @@
 <template>
   <div
-    class="inline-flex rounded-full bg-white py-1 pl-1 pr-1 shadow-sm border-[#023047] border border-opacity-[.34]"
+    class="inline-flex rounded-full bg-white py-[3px] pl-1 pr-1 shadow-sm border-[#023047] border border-opacity-[.34]"
   >
     <button
       :class="
         isForSale
-          ? 'bg-red-600 text-white'
+          ? 'bg-red-600 text-white text-[20px] font-bold'
           : 'text-gray-600 bg-white opacity-[.30] font-medium text-[#023047] cursor-pointer'
       "
       class="px-4 py-[2px] lg:py-2 rounded-full focus:outline-none transition-colors"
@@ -16,7 +16,7 @@
     <button
       :class="
         !isForSale
-          ? 'bg-red-600 text-white'
+          ? 'bg-red-600 text-white text-[20px] font-bold'
           : 'text-gray-600 bg-white opacity-[.30]'
       "
       class="px-4 py-[2px] lg:py-2 rounded-full focus:outline-none transition-colors"
