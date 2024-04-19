@@ -71,9 +71,9 @@
         </div>
       </div>
 
-      <div class="lg:mt-[-220px] 2xl:mt-[-97px] lg:block hidden w-[940px]">
+      <div class="image-correction lg:mt-[-295px] xl:mt-[-200px] 2xl:mt-[-90px] lg:block hidden w-[940px]">
         <img
-          class="bg-transparent 2xl:h-auto h-[800px]"
+          class="bg-transparent lg:max-w-lg xl:max-w-2xl 2xl:max-w-full 2xl:h-auto h-[800px]"
           src="/LuxuryHouse.webp"
           alt="LuxuryHouse"
         />
