@@ -4,29 +4,40 @@
       class="sm:flex items-center justify-between xl:gap-[24px] 2xl:gap-[40px]"
     >
       <ToggleSwitch class="w-[215px] lg:w-[23%] xl:w-[19%] 2xl:w-[15%]" />
-      <input
+      <!-- <input
         type="text"
         v-model="selectedOption"
         @keyup.enter="addTag"
         placeholder="Gemeente of postcode"
-        class="rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[22%] xl:w-[25%] font-[500] text-[20px] text-[#023047]"
-      />
-
+        class="font-[500] text-[20px] text-[#023047]"
+      /> -->
       <select
-        class="hidden xl:block custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[11%] xl:w-[13%] font-[500] text-[20px] text-[#023047]"
-        v-model="selectedOption2"
+        @change="addTag"
+        class=" rounded-[30px] border-[1.5px] border-[#023047] pl-5 py-2 w-[22%] xl:w-[25%] custom-select font-[500] text-[20px] text-[#023047]"
+        v-model="selectedOption"
       >
-        <option disabled value="">Huis</option>
+        <option disabled value="">Gemeente of postcode</option>
         <option value="Option 1">Option 1</option>
         <option value="Option 2">Option 2</option>
       </select>
 
       <select
+        @change="addTag"
+        class="hidden xl:block custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[11%] xl:w-[13%] font-[500] text-[20px] text-[#023047]"
+        v-model="selectedOption2"
+      >
+        <option disabled value="">Huis</option>
+        <option value="huis">huis</option>
+        <option value="Option 2">Option 2</option>
+      </select>
+
+      <select
+        @change="addTag"
         class="hidden xl:block custom-select rounded-[30px] border-[1.5px] sm:mt-0 mt-5 border-[#023047] px-5 py-2 w-[11%] xl:w-[13%] font-[500] text-[20px] text-[#023047]"
         v-model="selectedOption3"
       >
         <option disabled value="">Prijis</option>
-        <option value="Option 1">Option 1</option>
+        <option value="2x parkeer">2x parkeer</option>
         <option value="Option 2">Option 2</option>
       </select>
 
@@ -130,12 +141,24 @@ const selectedOption3 = ref("");
 const tags = ref([]);
 const isHeartActive = ref(false);
 
-function addTag() {
-  if (selectedOption.value) {
-    tags.value.push(selectedOption.value);
+watch(selectedOption, newValue => {
+  if (newValue) {
+    tags.value.push(newValue);
     selectedOption.value = "";
   }
-}
+});
+watch(selectedOption2, newValue => {
+  if (newValue) {
+    tags.value.push(newValue);
+    selectedOption2.value = ""; 
+  }
+});
+watch(selectedOption3, newValue => {
+  if (newValue) {
+    tags.value.push(newValue);
+    selectedOption3.value = ""; 
+  }
+});
 
 function removeTag(index) {
   tags.value.splice(index, 1); 
@@ -145,3 +168,9 @@ function toggleHeart() {
   isHeartActive.value = !isHeartActive.value;
 }
 </script>
+
+<style>
+select:focus {
+  outline: none;
+}
+</style>

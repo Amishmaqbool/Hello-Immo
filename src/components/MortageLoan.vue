@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#034465] lg:rounded-br-[120px]">
-    <div class="py-[60px] 2xl:max-w-[1640px] container mx-auto sm:px-0 px-5" :class="{'py-0 2xl:max-w-full pr-5': isSearchPage }">
+    <div class="py-[60px] 2xl:max-w-[1640px] container mx-auto sm:px-0 px-5" :class="{'lg:py-0 2xl:max-w-full pr-5': isSearchPage }">
       <div class="lg:flex items-center gap-32 2xl:gap-40">
         <div class="lg:w-[40%] 2xl:w-[800px]" :class="{'h-full 2xl:w-[950px] relative': isSearchPage }">
         <div :class="{'opacity-110 absolute bg-gradient-to-r from-transparent via-neutral to-[#044464] h-full w-full': isSearchPage }"></div>
