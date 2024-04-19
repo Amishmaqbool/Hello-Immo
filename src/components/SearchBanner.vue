@@ -3,7 +3,7 @@
     <div
       class="sm:flex items-center justify-between xl:gap-[24px] 2xl:gap-[40px]"
     >
-      <ToggleSwitch class="w-[215px] lg:w-[23%] xl:w-[19%] 2xl:w-[15%]" />
+      <ToggleSwitch class="w-[230px] lg:w-[24%] xl:w-[21%] 2xl:w-[15%]" />
       <!-- <input
         type="text"
         v-model="selectedOption"
@@ -13,7 +13,7 @@
       /> -->
       <select
         @change="addTag"
-        class=" rounded-[30px] border-[1.5px] border-[#023047] pl-5 py-2 w-[22%] xl:w-[25%] custom-select font-[500] text-[20px] text-[#023047]"
+        class="hidden xl:block rounded-[30px] border-[1.5px] border-[#023047] pl-5 py-2 w-[22%] xl:w-[25%] custom-select font-[500] text-[20px] text-[#023047]"
         v-model="selectedOption"
       >
         <option disabled value="">Gemeente of postcode</option>
@@ -42,14 +42,14 @@
       </select>
 
       <p
-        class="hidden xl:block text-[20px] text-[#023047] w-[15%] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center underline"
+        class="hidden xl:block text-[20px] text-[#023047] w-[15%] xl:w-[10%] sm:mt-0 mt-5 sm:text-left text-center underline"
       >
         Meer filters
       </p>
 
       <div class="sm:flex items-center gap-[24px]">
         <p
-          class="block xl:hidden text-[20px] text-[#023047] w-[95px] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center underline"
+          class="block xl:hidden text-[20px] text-[#023047] w-[110px] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center underline"
         >
           Meer filters
         </p>
@@ -70,7 +70,7 @@
         class="mt-5 block xl:hidden custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[100%] sm:w-[70%] xl:w-[25%] font-[500] text-[20px] text-[#023047]"
         v-model="selectedOption"
       >
-        <option disabled value="Gemeente of postcode">
+        <option disabled value="">
           Gemeente of postcode
         </option>
         <option value="Option 1">Option 1</option>
@@ -84,7 +84,7 @@
         class="mt-5 block xl:hidden custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-2 w-[100%] sm:w-[70%] font-[500] text-[20px] text-[#023047]"
         v-model="selectedOption2"
       >
-        <option disabled value="Huis">Huis</option>
+        <option disabled value="">Huis</option>
         <option value="Option 1">Option 1</option>
         <option value="Option 2">Option 2</option>
       </select>
@@ -93,7 +93,7 @@
         class="block xl:hidden custom-select rounded-[30px] border-[1.5px] mt-5 border-[#023047] px-5 py-2 w-[100%] sm:w-[70%] font-[500] text-[20px] text-[#023047]"
         v-model="selectedOption3"
       >
-        <option disabled value="Prijis">Prijis</option>
+        <option disabled value="">Prijis</option>
         <option value="Option 1">Option 1</option>
         <option value="Option 2">Option 2</option>
       </select>
