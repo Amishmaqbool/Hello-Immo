@@ -1,15 +1,23 @@
 <template>
   <div class="2xl:max-w-[1640px] container mx-auto sm:pb-28 sm:pt-40 py-10">
-    <div class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center">
+    <div
+      class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center"
+    >
       <p
         class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
       >
         Laatst toegevoegde panden
       </p>
-      <p class="text-[#023047] text-[20px] font-normal underline">Bekijk alle panden</p>
+      <p class="text-[#023047] text-[20px] font-normal underline">
+        Bekijk alle panden
+      </p>
     </div>
     <carousel :breakpoints="breakpoints">
-      <slide v-for="(slide, index) in slides" :key="index" class="">
+      <slide
+        v-for="(slide, index) in slides"
+        :key="index"
+        class=""
+      >
         <div
           class="bg-white rounded-2xl mx-2 w-[90%] sm:w-[510px] h-full flex flex-col justify-between relative"
         >
@@ -17,7 +25,7 @@
             :src="slide.image"
             :alt="'Image ' + (index + 1)"
             class="w-full sm:w-[520px] h-full sm:h-[320px]"
-          />
+          >
           <div
             class="bg-[#d10909] px-4 py-1 rounded-[20px] absolute top-2 left-4"
           >
@@ -35,20 +43,22 @@
             @click="toggleHeart(slide)"
           >
             <img
+              v-if="!slide.heartClicked"
               src="../assets/heart-outline.svg"
               alt="heart"
               class="h-[30px] w-[30px]"
-              v-if="!slide.heartClicked"
-            />
+            >
             <img
-            src="../assets/heart-outlineRed.svg"
-            alt="heart"
-            class="h-[30px] w-[30px] block"
-            v-else
-          />
+              v-else
+              src="../assets/heart-outlineRed.svg"
+              alt="heart"
+              class="h-[30px] w-[30px] block"
+            >
           </div>
           <div>
-            <p class="text-[#023047] text-[28px] font-bold px-8 text-left pt-5 pb-3">
+            <p
+              class="text-[#023047] text-[28px] font-bold px-8 text-left pt-5 pb-3"
+            >
               {{ slide.text }}
             </p>
           </div>
@@ -58,7 +68,7 @@
                 src="../assets/locationicon.svg"
                 alt="location"
                 class="h-full w-[14px]"
-              />
+              >
               <p class="text-gray-400 text-xl font-normal">
                 {{ slide.location }}
               </p>
@@ -68,19 +78,21 @@
                 src="../assets/ruler.svg"
                 alt="location"
                 class="h-full w-[15px]"
-              />
+              >
               <p
                 class="text-gray-400 text-xl font-normal"
                 v-html="slide.scale"
-              ></p>
+              />
             </div>
             <div class="flex gap-2 items-center">
               <img
                 src="../assets/bedicon.svg"
                 alt="location"
                 class="h-full w-[20px]"
-              />
-              <p class="text-gray-400 text-xl font-normal">{{ slide.bed }}</p>
+              >
+              <p class="text-gray-400 text-xl font-normal">
+                {{ slide.bed }}
+              </p>
             </div>
           </div>
         </div>
@@ -115,16 +127,16 @@ export default {
       breakpoints: {
         300: {
           itemsToShow: 1,
-          itemsToScroll:1,
+          itemsToScroll: 1,
         },
         640: {
           itemsToShow: 2,
-          itemsToScroll:2,
+          itemsToScroll: 2,
           snapAlign: "start",
         },
         1100: {
           itemsToShow: 3,
-          itemsToScroll:4,
+          itemsToScroll: 4,
         },
       },
       slides: [
@@ -257,8 +269,8 @@ export default {
 }
 
 @media screen and (max-width: 600px) {
-.carousel__pagination-item {
-  display: list-item !important;
-}
+  .carousel__pagination-item {
+    display: list-item !important;
+  }
 }
 </style>

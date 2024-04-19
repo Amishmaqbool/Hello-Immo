@@ -1,18 +1,35 @@
 <template>
-  <div :class="{'2xl:max-w-[1640px] container px-5 sm:px-0 sm:mx-auto': true, 'pt-[30px]': !isSearchPage, 'py-[20px]': isSearchPage}">
+  <div
+    :class="{
+      '2xl:max-w-[1640px] container px-5 sm:px-0 sm:mx-auto': true,
+      'pt-[30px]': !isSearchPage,
+      'py-[20px]': isSearchPage,
+    }"
+  >
     <nav>
       <div class="xl:flex justify-between">
         <div class="flex justify-between xl:gap-[18px] items-center">
           <a href="/">
-            <img src="/Logo.svg" alt="" class="sm:w-auto w-[200px]" />
+            <img
+              src="/Logo.svg"
+              alt=""
+              class="sm:w-auto w-[200px]"
+            >
           </a>
           <div class="z-50 flex gap-2 items-center">
             <div class="sm:block hidden">
               <ToggleSwitch />
             </div>
             <div class="xl:hidden">
-              <button @click="toggleMobileMenu" class="p-2">
-                <img class="h-6 w-6" src="/menu.png" alt="Menu" />
+              <button
+                class="p-2"
+                @click="toggleMobileMenu"
+              >
+                <img
+                  class="h-6 w-6"
+                  src="/menu.png"
+                  alt="Menu"
+                >
               </button>
             </div>
           </div>
@@ -20,15 +37,26 @@
 
         <div class="z-50 xl:block hidden">
           <div class="flex items-center gap-4 2xl:gap-[43px]">
-            <router-link to="/search" class="font-medium text-[24px] text-[#023047] cursor-pointer" :class="{ 'border-b-4 border-red-500': isSearchPage }">
+            <router-link
+              to="/search"
+              class="font-medium text-[24px] text-[#023047] cursor-pointer"
+              :class="{ 'border-b-4 border-red-500': isSearchPage }"
+            >
               Panden te koop
             </router-link>
             <p class="font-medium text-[24px] text-[#023047] cursor-pointer">
               Hypotheeklening
             </p>
-            <div class="px-7 py-3 flex items-center gap-3 rounded-full cursor-pointer bg-[#034465]">
-              <p class="font-semibold text-[22px] text-white">Contacteer ons</p>
-              <img src="/ArrowRightWhite.svg" alt="" />
+            <div
+              class="px-7 py-3 flex items-center gap-3 rounded-full cursor-pointer bg-[#034465]"
+            >
+              <p class="font-semibold text-[22px] text-white">
+                Contacteer ons
+              </p>
+              <img
+                src="/ArrowRightWhite.svg"
+                alt=""
+              >
             </div>
           </div>
         </div>
@@ -42,53 +70,83 @@
         'translate-x-0': isMobileMenuOpen,
       }"
     >
-      <button @click="toggleMobileMenu" class="absolute top-2 right-4 p-2 rounded-full border border-black mb-5">
-        <img class="h-4 w-4" src="/CloseIcon.svg" alt="Close" />
+      <button
+        class="absolute top-2 right-4 p-2 rounded-full border border-black mb-5"
+        @click="toggleMobileMenu"
+      >
+        <img
+          class="h-4 w-4"
+          src="/CloseIcon.svg"
+          alt="Close"
+        >
       </button>
       <ul class="mt-16 space-y-4">
         <div class="px-5">
-          <img src="/Logo.svg" alt="" />
+          <img
+            src="/Logo.svg"
+            alt=""
+          >
         </div>
         <li>
-         <router-link to="/search" class="block px-4 py-2 text-lg font-medium text-[#023047]">Panden te koop</router-link>
-
+          <router-link
+            to="/search"
+            class="block px-4 py-2 text-lg font-medium text-[#023047]"
+          >
+            Panden te koop
+          </router-link>
         </li>
         <li>
-          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
-            >Hypotheeklening</a
-          >
+          <a
+            href="#"
+            class="block px-4 py-2 text-lg font-medium text-[#023047]"
+          >Hypotheeklening</a>
         </li>
         <li>
-          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
-            >Contacteer ons</a
-          >
+          <a
+            href="#"
+            class="block px-4 py-2 text-lg font-medium text-[#023047]"
+          >Contacteer ons</a>
         </li>
         <li>
-          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
-            >Nieuws</a
-          >
+          <a
+            href="#"
+            class="block px-4 py-2 text-lg font-medium text-[#023047]"
+          >Nieuws</a>
         </li>
         <li>
-          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
-            >Over ons</a
-          >
+          <a
+            href="#"
+            class="block px-4 py-2 text-lg font-medium text-[#023047]"
+          >Over ons</a>
         </li>
         <li>
           <a
             href="#"
             class="block px-4 py-2 text-lg font-medium text-[#023047] flex gap-2 items-center"
           >
-            <img src="/FeatherUser.svg" width="20" height="20" alt="stars" />
+            <img
+              src="/FeatherUser.svg"
+              width="20"
+              height="20"
+              alt="stars"
+            >
             Inloggen
           </a>
         </li>
         <div class="md:flex p-4 items-center">
-          <h1 class="text-[20px] text-[#023047] font-bold opacity-70">4,8</h1>
+          <h1 class="text-[20px] text-[#023047] font-bold opacity-70">
+            4,8
+          </h1>
           <p class="text-[#023047] font-normal opacity-70 sm:pt-0 pt-2">
             (Google reviews)
           </p>
           <div class="md:pl-4 sm:pt-0 pt-2">
-            <img src="/BannerStars.svg" width="50" height="30" alt="stars" />
+            <img
+              src="/BannerStars.svg"
+              width="50"
+              height="30"
+              alt="stars"
+            >
           </div>
         </div>
       </ul>
@@ -102,24 +160,26 @@ import { useRoute } from "vue-router";
 import ToggleSwitch from "./ToggleSwitch.vue";
 
 export default {
-  name: "Navbar",
+  name: "AppNavbar",
   components: {
     ToggleSwitch,
   },
   setup() {
     const isMobileMenuOpen = ref(false);
-    const route = useRoute(); 
-    const isSearchPage = computed(() => route.path === '/search'); 
+    const route = useRoute();
+    const isSearchPage = computed(() => route.path === "/search");
 
     const toggleMobileMenu = () => {
       isMobileMenuOpen.value = !isMobileMenuOpen.value;
-      document.body.style.overflow = isMobileMenuOpen.value ? "hidden" : "visible";
+      document.body.style.overflow = isMobileMenuOpen.value
+        ? "hidden"
+        : "visible";
     };
 
     return {
       isMobileMenuOpen,
       toggleMobileMenu,
-      isSearchPage
+      isSearchPage,
     };
   },
 };

@@ -12,7 +12,7 @@ import ToggleSwitch from "../ToggleSwitch.vue";
               class="mb-8 cursor-pointer h-12 h-[60px] w-64 lg:w-full"
               src="/Logo.svg"
               alt="Logo"
-            />
+            >
             <ToggleSwitch />
           </div>
           <div
@@ -74,10 +74,8 @@ import ToggleSwitch from "../ToggleSwitch.vue";
             </div>
           </div>
         </div>
-        <hr class="h-[2px] mb-5 bg-[#7f939e] mt-[100px] lg:mt-[150px]"/>
-        <div
-          class=" pb-[20px] flex justify-between flex-wrap items-center"
-        >
+        <hr class="h-[2px] mb-5 bg-[#7f939e] mt-[100px] lg:mt-[150px]">
+        <div class="pb-[20px] flex justify-between flex-wrap items-center">
           <div class="flex gap-[37px]">
             <p
               class="font-normal text-4 lg:text-[20px] text-[#023047] cursor-pointer opacity-[0.50]"
@@ -103,6 +101,6 @@ import ToggleSwitch from "../ToggleSwitch.vue";
 
 <script>
 export default {
-  name: "Footer",
+  name: "AppFooter",
 };
 </script>

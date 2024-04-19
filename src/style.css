@@ -63,7 +63,7 @@ body {
   -moz-appearance: none;
   appearance: none;
   background: url("./assets/DownArrow.svg") no-repeat right 15px center;
-  background-size: 28px 28px; 
+  background-size: 28px 28px;
   cursor: pointer;
 }
 
@@ -71,7 +71,7 @@ body {
   display: none;
 }
 @media screen and (max-width: 1135px) {
-  .image-correction{
+  .image-correction {
     margin-top: -390px !important;
   }
 }

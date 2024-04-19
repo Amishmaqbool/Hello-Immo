@@ -1,18 +1,18 @@
 <template>
-    <TopBanner />
-    <slot />
-    <Footer />
+  <TopBanner />
+  <slot />
+  <AppFooter />
 </template>
 
 <script>
-import TopBanner from '../common/TopBanner.vue';
-import Footer from '../common/Footer.vue'
+import TopBanner from "../common/TopBanner.vue";
+import AppFooter from "../common/Footer.vue";
 
 export default {
-  name: 'Layout',
+  name: "MainLayout",
   components: {
     TopBanner,
-    Footer
-  }
-}
+    AppFooter,
+  },
+};
 </script>

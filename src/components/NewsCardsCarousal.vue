@@ -1,26 +1,34 @@
 <template>
   <div class="2xl:max-w-[1640px] container mx-auto sm:pt-40 py-10">
-    <div class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center">
+    <div
+      class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center"
+    >
       <p
         class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
       >
         Laatste nieuws
       </p>
-      <p class="text-[#023047] text-[20px] font-normal underline">Bekijk alle artikels</p>
+      <p class="text-[#023047] text-[20px] font-normal underline">
+        Bekijk alle artikels
+      </p>
     </div>
     <carousel :breakpoints="breakpoints">
-      <slide v-for="(slide, index) in slides" :key="index" class="">
+      <slide
+        v-for="(slide, index) in slides"
+        :key="index"
+        class=""
+      >
         <div
           class="rounded-2xl w-[80%] xl:w-[400px] 2xl:w-[520px] h-full 2xl:h-[400px] relative"
         >
           <div
             class="bg-gradient-to-b from-gray-300 via-slate-700 to-black h-full absolute opacity-60 w-full rounded-2xl lg:py-0 py-10"
-          ></div>
+          />
           <img
             :src="slide.image"
             :alt="'Image ' + (index + 1)"
             class="lg:object-fill h-full"
-          />
+          >
           <div
             class="bg-[#034465] lg:w-fit px-4 pt-[7px] pb-1 rounded-[20px] absolute left-3 top-7"
           >

@@ -3,22 +3,33 @@
     <div class="pt-[40px]">
       <SearchBanner />
     </div>
-    <div class="sm:flex justify-between mt-10 pt-10 pb-10 items-center">
+    <div class="sm:flex justify-between pt-10 pb-10 items-center">
       <p
         class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
       >
         Huis te koop
       </p>
       <div class="flex items-center text-[#023047] text-[20px] font-normal">
-        <p class="opacity-[0.65]">Sorteren op:</p>
+        <p class="opacity-[0.65]">
+          Sorteren op:
+        </p>
         <select
-        class="custom-select px-2 w-[150px] font-[500] text-[20px] text-[#023047]"
-        v-model="selected"
-      >
-        <option disabled value="">Relevantie</option>
-        <option value="Option 1">Option 1</option>
-        <option value="Option 2">Option 2</option>
-      </select>
+          v-model="selected"
+          class="custom-select px-2 w-[150px] font-[500] text-[20px] text-[#023047]"
+        >
+          <option
+            disabled
+            value=""
+          >
+            Relevantie
+          </option>
+          <option value="Option 1">
+            Option 1
+          </option>
+          <option value="Option 2">
+            Option 2
+          </option>
+        </select>
       </div>
     </div>
     <div>
@@ -32,7 +43,11 @@
       <div
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 justify-between"
       >
-        <div v-for="(slide, index) in displayedSlides" :key="index" class="">
+        <div
+          v-for="(slide, index) in displayedSlides"
+          :key="index"
+          class=""
+        >
           <div
             class="bg-white rounded-2xl sm:w-[100%] h-full flex flex-col justify-between relative"
           >
@@ -40,7 +55,7 @@
               :src="slide.image"
               :alt="'Image ' + (index + 1)"
               class="w-full sm:w-full h-full sm:h-[320px]"
-            />
+            >
             <div
               class="bg-[#d10909] px-4 py-1 rounded-[20px] absolute top-2 left-4"
             >
@@ -54,22 +69,22 @@
               }}</span>
             </div>
             <div
-      class="bg-[#96a6af] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4 cursor-pointer"
-      @click="toggleHeart(index)"
-    >
-      <img
-      src="../assets/heart-outline.svg"
-      alt="heart"
-      class="h-[30px] w-[30px]"
-      v-if="!isHeartClicked(index)"
-    />
-    <img
-    src="../assets/heart-outlineRed.svg"
-    alt="heart"
-    class="h-[30px] w-[30px] block"
-    v-else
-  />
-    </div>
+              class="bg-[#96a6af] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4 cursor-pointer"
+              @click="toggleHeart(index)"
+            >
+              <img
+                v-if="!isHeartClicked(index)"
+                src="../assets/heart-outline.svg"
+                alt="heart"
+                class="h-[30px] w-[30px]"
+              >
+              <img
+                v-else
+                src="../assets/heart-outlineRed.svg"
+                alt="heart"
+                class="h-[30px] w-[30px] block"
+              >
+            </div>
             <div>
               <p
                 class="text-[#023047] text-[28px] font-bold px-8 text-left py-5"
@@ -83,7 +98,7 @@
                   src="../assets/locationicon.svg"
                   alt="location"
                   class="h-full w-[14px]"
-                />
+                >
                 <p class="text-gray-400 text-xl font-normal">
                   {{ slide.location }}
                 </p>
@@ -93,19 +108,21 @@
                   src="../assets/ruler.svg"
                   alt="location"
                   class="h-full w-[15px]"
-                />
+                >
                 <p
                   class="text-gray-400 text-xl font-normal"
                   v-html="slide.scale"
-                ></p>
+                />
               </div>
               <div class="flex gap-2 items-center">
                 <img
                   src="../assets/bedicon.svg"
                   alt="location"
                   class="h-full w-[20px]"
-                />
-                <p class="text-gray-400 text-xl font-normal">{{ slide.bed }}</p>
+                >
+                <p class="text-gray-400 text-xl font-normal">
+                  {{ slide.bed }}
+                </p>
               </div>
             </div>
           </div>
@@ -118,14 +135,17 @@
         class="paginate-buttons cursor-pointer"
         @click="onClickHandler(currentPage - 1)"
       >
-        <img src="/ArrowLeft.svg" alt="location" />
+        <img
+          src="/ArrowLeft.svg"
+          alt="location"
+        >
       </button>
 
       <div class="mx-6">
         <button
           v-for="page in totalPages"
-          class="mx-2"
           :key="page"
+          class="mx-2"
           :class="{
             'paginate-buttons': true,
             'active-page': page === currentPage,
@@ -141,7 +161,10 @@
         class="paginate-buttons cursor-pointer"
         @click="onClickHandler(currentPage + 1)"
       >
-        <img src="/ArrowRight.svg" alt="location" />
+        <img
+          src="/ArrowRight.svg"
+          alt="location"
+        >
       </button>
     </div>
   </div>
@@ -360,6 +383,6 @@ const isHeartClicked = (index) => {
 .active-page {
   color: #023047;
   font-weight: 900;
-  border-bottom:3px solid red;
+  border-bottom: 3px solid red;
 }
 </style>
