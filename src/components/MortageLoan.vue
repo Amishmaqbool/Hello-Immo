@@ -36,7 +36,7 @@
           :class="{ 'py-[60px] lg:pt-[60px] pt-[65px] pr-5': isSearchPage }"
         >
           <h1
-            class="text-[44px] text-white helvatica-Bold leading-[50px] relative"
+            class="text-[44px] text-white font-[Cabin] font-extrabold leading-[50px] relative"
           >
             Wij helpen je met jouw
             <span class="relative z-10">

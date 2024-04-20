@@ -8,11 +8,12 @@
         class="2xl:max-w-[700px] px-5 container sm:mx-auto lg:pl-20 2xl:pl-10"
       >
         <h1
-          class="text-[40px] sm:text-[56px] text-[#023047] helvatica-Bold leading-[60px] 2xl:w-[85%]"
+          class="text-[40px] sm:text-[56px] text-[#023047] font-[Cabin] leading-[60px] 2xl:w-[100%]"
         >
-          Wij helpen je een thuis vinden én financieren
+          Wij helpen je een <br />
+          thuis vinden én financieren
         </h1>
-        <p class="text-[#023047] text-[20px] pt-2 2xl:w-[720px]">
+        <p class="text-[#023047] text-[20px] pt-10 2xl:w-[720px]">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
         </p>
@@ -25,27 +26,12 @@
               v-model="selected"
               class="custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
             >
-              <option
-                disabled
-                value=""
-              >
-                Gemeente of postcode
-              </option>
-              <option value="Option 1">
-                Option 1
-              </option>
-              <option value="Option 2">
-                Option 2
-              </option>
-              <option value="Option 3">
-                Option 3
-              </option>
-              <option value="Option 4">
-                Option 4
-              </option>
-              <option value="Option 5">
-                Option 5
-              </option>
+              <option disabled value="">Gemeente of postcode</option>
+              <option value="Option 1">Option 1</option>
+              <option value="Option 2">Option 2</option>
+              <option value="Option 3">Option 3</option>
+              <option value="Option 4">Option 4</option>
+              <option value="Option 5">Option 5</option>
             </select>
 
             <div class="sm:flex gap-x-[32px] items-center pt-8">
@@ -53,36 +39,18 @@
                 v-model="selected2"
                 class="custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
               >
-                <option
-                  disabled
-                  value=""
-                >
-                  Type
-                </option>
-                <option value="Option 1">
-                  Option 1
-                </option>
-                <option value="Option 2">
-                  Option 2
-                </option>
+                <option disabled value="">Type</option>
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
               </select>
 
               <select
                 v-model="selected3"
                 class="custom-select rounded-[30px] border-[1.5px] sm:mt-0 mt-5 border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
               >
-                <option
-                  disabled
-                  value=""
-                >
-                  Prijis
-                </option>
-                <option value="Option 1">
-                  Option 1
-                </option>
-                <option value="Option 2">
-                  Option 2
-                </option>
+                <option disabled value="">Prijis</option>
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
               </select>
 
               <p
@@ -97,10 +65,7 @@
                 class="bg-[#034465] text-white font-medium text-[22px] rounded-[25px] px-5 py-2 mt-8 flex gap-4 items-center"
               >
                 Zoek pand
-                <img
-                  src="/Search.svg"
-                  alt="MortageFamily"
-                >
+                <img src="/Search.svg" alt="MortageFamily" />
               </button>
             </div>
           </div>
@@ -114,7 +79,7 @@
           class="bg-transparent lg:max-w-lg xl:max-w-2xl 2xl:max-w-full 2xl:h-auto h-[800px]"
           src="/LuxuryHouse.webp"
           alt="LuxuryHouse"
-        >
+        />
       </div>
     </div>
   </div>
