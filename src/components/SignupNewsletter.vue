@@ -11,7 +11,7 @@
                 height="25"
                 src="/HeadingUnderline.svg"
                 alt="underline"
-                class="xl:block absolute left-0 bottom-0 translate-y-[100%] translate-x-[100%] -translate-x-1/2"
+                class="xl:block absolute left-1 bottom-1 translate-y-[100%] translate-x-[100%] -translate-x-1/2"
                 style="transform: translateX(calc(100% + 7em)) translateY(50%)"
               >
             </div>

@@ -39,19 +39,19 @@
             class="text-[44px] text-white font-[Cabin] font-extrabold leading-[50px] relative"
           >
             Wij helpen je met jouw
-            <span class="relative z-10">
+            <span class="z-50">
               hypothecaire lening
               <div class="2xl:block hidden">
                 <img
-                  src="/MortageHeadingLine.svg"
+                  src="/MortageHeadingLine.png"
                   alt="underline"
-                  class="absolute bottom-[-20px] left-[-10px] z-0"
+                  class="w-[394px] mt-[-30px] ml-[-10px] z-[-50]"
                   style="transform: translateY(10%)"
                 >
               </div>
             </span>
           </h1>
-          <p class="text-white text-[20px] pt-[50px]">
+          <p class="text-white text-[20px] pt-[30px]">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
