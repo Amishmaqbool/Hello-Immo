@@ -8,16 +8,14 @@
       >
         Laatst toegevoegde panden
       </p>
-      <p class="text-[#023047] text-[20px] font-normal underline cursor-pointer">
+      <p
+        class="text-[#023047] text-[20px] font-normal underline cursor-pointer"
+      >
         Bekijk alle panden
       </p>
     </div>
     <carousel :breakpoints="breakpoints">
-      <slide
-        v-for="(slide, index) in slides"
-        :key="index"
-        class=""
-      >
+      <slide v-for="(slide, index) in slides" :key="index" class="">
         <div
           class="bg-white rounded-2xl mx-2 w-[90%] sm:w-[510px] h-full flex flex-col justify-between relative"
         >
@@ -25,7 +23,7 @@
             :src="slide.image"
             :alt="'Image ' + (index + 1)"
             class="w-full sm:w-[520px] h-full sm:h-[320px]"
-          >
+          />
           <div
             class="bg-[#d10909] px-4 py-1 rounded-[20px] absolute top-2 left-4"
           >
@@ -47,13 +45,13 @@
               src="../assets/heart-outline.svg"
               alt="heart"
               class="h-[30px] w-[30px]"
-            >
+            />
             <img
               v-else
               src="../assets/heart-outlineRed.svg"
               alt="heart"
               class="h-[30px] w-[30px] block"
-            >
+            />
           </div>
           <div>
             <p
@@ -68,7 +66,7 @@
                 src="../assets/locationicon.svg"
                 alt="location"
                 class="h-full w-[14px]"
-              >
+              />
               <p class="text-gray-400 text-xl font-normal">
                 {{ slide.location }}
               </p>
@@ -78,7 +76,7 @@
                 src="../assets/ruler.svg"
                 alt="location"
                 class="h-full w-[15px]"
-              >
+              />
               <p
                 class="text-gray-400 text-xl font-normal"
                 v-html="slide.scale"
@@ -89,7 +87,7 @@
                 src="../assets/bedicon.svg"
                 alt="location"
                 class="h-full w-[20px]"
-              >
+              />
               <p class="text-gray-400 text-xl font-normal">
                 {{ slide.bed }}
               </p>

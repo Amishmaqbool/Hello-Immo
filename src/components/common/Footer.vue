@@ -9,12 +9,12 @@ import ToggleSwitch from "../ToggleSwitch.vue";
         <div class="flex flex-col lg:flex-row justify-between">
           <div class="pt-[60px] lg:pt-[90px]">
             <a href="/">
-            <img
-              class="mb-8 cursor-pointer h-12 h-[60px] w-64 lg:w-full"
-              src="/Logo.svg"
-              alt="Logo"
-            >
-          </a>
+              <img
+                class="mb-8 cursor-pointer h-12 h-[60px] w-64 lg:w-full"
+                src="/Logo.svg"
+                alt="Logo"
+              />
+            </a>
             <ToggleSwitch />
           </div>
           <div
@@ -76,7 +76,7 @@ import ToggleSwitch from "../ToggleSwitch.vue";
             </div>
           </div>
         </div>
-        <hr class="h-[2px] mb-5 bg-[#7f939e] mt-[100px] lg:mt-[150px]">
+        <hr class="h-[2px] mb-5 bg-[#7f939e] mt-[100px] lg:mt-[150px]" />
         <div class="pb-[20px] flex justify-between flex-wrap items-center">
           <div class="flex gap-[37px]">
             <p

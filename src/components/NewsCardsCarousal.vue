@@ -8,16 +8,14 @@
       >
         Laatste nieuws
       </p>
-      <p class="text-[#023047] text-[20px] font-normal underline cursor-pointer">
+      <p
+        class="text-[#023047] text-[20px] font-normal underline cursor-pointer"
+      >
         Bekijk alle artikels
       </p>
     </div>
     <carousel :breakpoints="breakpoints">
-      <slide
-        v-for="(slide, index) in slides"
-        :key="index"
-        class=""
-      >
+      <slide v-for="(slide, index) in slides" :key="index" class="">
         <div
           class="rounded-2xl w-[80%] xl:w-[400px] 2xl:w-[520px] h-full 2xl:h-[400px] relative cursor-pointer"
         >
@@ -28,7 +26,7 @@
             :src="slide.image"
             :alt="'Image ' + (index + 1)"
             class="lg:object-fill h-full"
-          >
+          />
           <div
             class="bg-[#034465] lg:w-fit px-4 pt-[7px] pb-1 rounded-[20px] absolute left-3 top-7"
           >

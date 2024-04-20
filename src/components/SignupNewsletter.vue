@@ -13,7 +13,7 @@
                 alt="underline"
                 class="xl:block absolute left-1 bottom-1 translate-y-[100%] translate-x-[100%] -translate-x-1/2"
                 style="transform: translateX(calc(100% + 7em)) translateY(50%)"
-              >
+              />
             </div>
           </h1>
         </div>
@@ -26,7 +26,7 @@
           <input
             class="rounded-[30px] px-6 py-3 text-[20px] placeholder-[#023047] font-semibold sm:w-[380px]"
             placeholder="E-mailadres"
-          >
+          />
           <button
             class="text-[white] text-[20px] bg-[#D10909] px-4 py-2 rounded-full sm:mt-0 mt-4"
           >

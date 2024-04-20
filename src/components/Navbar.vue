@@ -34,7 +34,9 @@
             >
               Panden te koop
             </router-link>
-            <p class="font-medium text-[24px] hover:border-b-[3px] hover:border-red-500 text-[#023047] cursor-pointer">
+            <p
+              class="font-medium text-[24px] hover:border-b-[3px] hover:border-red-500 text-[#023047] cursor-pointer"
+            >
               Hypotheeklening
             </p>
             <div
