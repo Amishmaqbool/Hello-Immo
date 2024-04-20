@@ -1,6 +1,6 @@
 <template>
   <div
-    class="inline-flex rounded-full bg-white py-[3px] pl-[2px] pr-[2px] shadow-sm border-[#023047] border border-opacity-[.34]"
+    class="inline-flex rounded-full bg-white py-[3px] pl-[2px] pr-[2px] shadow-sm border-[#023047] border-[1.5px] border-opacity-[.34]"
   >
     <button
       :class="

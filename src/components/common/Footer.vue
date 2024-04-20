@@ -25,17 +25,17 @@ import ToggleSwitch from "../ToggleSwitch.vue";
                 Menu
               </h6>
               <p
-                class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer text-[#023047]"
+                class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer text-[#023047] py-1"
               >
                 Nieuws
               </p>
               <p
-                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047]"
+                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047] py-1"
               >
                 Over ons
               </p>
               <p
-                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047]"
+                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047] py-1"
               >
                 Contact
               </p>
@@ -46,22 +46,22 @@ import ToggleSwitch from "../ToggleSwitch.vue";
                 Panden te koop
               </h6>
               <p
-                class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer text-[#023047]"
+                class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer text-[#023047] py-1"
               >
                 Huis
               </p>
               <p
-                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047]"
+                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047] py-1"
               >
                 Appartement
               </p>
               <p
-                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047]"
+                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047] py-1"
               >
                 Nieuwbouwproject
               </p>
               <p
-                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047]"
+                class="font-normal text-4 lg:text-[20px] cursor-pointer text-[#023047] py-1"
               >
                 Kantoor
               </p>
@@ -76,7 +76,7 @@ import ToggleSwitch from "../ToggleSwitch.vue";
             </div>
           </div>
         </div>
-        <hr class="h-[2px] mb-5 bg-[#7f939e] mt-[100px] lg:mt-[150px]" />
+        <hr class="h-[2px] mb-5 bg-[#7f939e] mt-[100px] lg:mt-[150px] opacity-50" />
         <div class="pb-[20px] flex justify-between flex-wrap items-center">
           <div class="flex gap-[37px]">
             <p
