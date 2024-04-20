@@ -145,7 +145,7 @@
         <button
           v-for="page in totalPages"
           :key="page"
-          class="mx-2"
+          class="mx-2 px-1"
           :class="{
             'paginate-buttons': true,
             'active-page': page === currentPage,
@@ -383,6 +383,6 @@ const isHeartClicked = (index) => {
 .active-page {
   color: #023047;
   font-weight: 900;
-  border-bottom: 3px solid red;
+  border-bottom: 2px solid red;
 }
 </style>

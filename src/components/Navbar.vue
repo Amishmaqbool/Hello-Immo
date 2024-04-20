@@ -28,13 +28,13 @@
         <div class="z-50 xl:block hidden">
           <div class="flex items-center gap-4 2xl:gap-[43px]">
             <router-link
-              class="font-medium text-[24px] text-[#023047] cursor-pointer"
+              class="font-medium text-[24px] hover:border-b-[3px] hover:border-red-500 text-[#023047] cursor-pointer"
               :class="{ 'border-b-[3px] border-red-500': isSearchPage }"
               :to="{ name: 'search', params: '/search' }"
             >
               Panden te koop
             </router-link>
-            <p class="font-medium text-[24px] text-[#023047] cursor-pointer">
+            <p class="font-medium text-[24px] hover:border-b-[3px] hover:border-red-500 text-[#023047] cursor-pointer">
               Hypotheeklening
             </p>
             <div
