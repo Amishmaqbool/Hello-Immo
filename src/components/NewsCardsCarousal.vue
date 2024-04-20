@@ -8,7 +8,7 @@
       >
         Laatste nieuws
       </p>
-      <p class="text-[#023047] text-[20px] font-normal underline">
+      <p class="text-[#023047] text-[20px] font-normal underline cursor-pointer">
         Bekijk alle artikels
       </p>
     </div>

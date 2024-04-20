@@ -40,7 +40,7 @@
             <router-link
               to="/search"
               class="font-medium text-[24px] text-[#023047] cursor-pointer"
-              :class="{ 'border-b-4 border-red-500': isSearchPage }"
+              :class="{ 'border-b-[3px] border-red-500': isSearchPage }"
             >
               Panden te koop
             </router-link>

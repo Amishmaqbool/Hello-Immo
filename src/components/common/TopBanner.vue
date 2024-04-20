@@ -8,7 +8,7 @@
               4,8
             </h1>
           </div>
-          <div class="md:pl-4">
+          <div class="md:pl-4 cursor-pointer">
             <img
               src="/BannerStars.svg"
               width="116"
@@ -17,24 +17,24 @@
             >
           </div>
           <div class="md:pl-2">
-            <p class="text-[#023047] text-[20px] font-normal opacity-70">
+            <p class="text-[#023047] text-[20px] font-normal opacity-70 cursor-pointer">
               (Google reviews)
             </p>
           </div>
         </div>
         <div class="sm:flex items-center">
           <div class="pr-2 md:pr-4">
-            <p class="text-[20px] text-[#023047] opacity-70">
+            <p class="text-[20px] text-[#023047] opacity-70 cursor-pointer">
               Nieuws
             </p>
           </div>
           <div class="pr-4 md:pr-10 border-r-[3px] h-5 border-[#80939f]">
-            <p class="text-[20px] mt-[-5px] text-[#023047] opacity-70">
+            <p class="text-[20px] mt-[-5px] text-[#023047] opacity-70 cursor-pointer">
               Over ons
             </p>
           </div>
           <div class="mr-4 md:mr-10" />
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2 cursor-pointer">
             <img
               src="/FeatherUser.svg"
               width="20"

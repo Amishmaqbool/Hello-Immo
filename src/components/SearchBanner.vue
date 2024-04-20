@@ -69,14 +69,14 @@
       </select>
 
       <p
-        class="hidden xl:block text-[20px] text-[#023047] w-[15%] xl:w-[10%] sm:mt-0 mt-5 sm:text-left text-center underline"
+        class="hidden xl:block text-[20px] text-[#023047] w-[15%] xl:w-[10%] sm:mt-0 mt-5 sm:text-left text-center underline cursor-pointer"
       >
         Meer filters
       </p>
 
       <div class="sm:flex items-center gap-[24px]">
         <p
-          class="block xl:hidden text-[20px] text-[#023047] w-[110px] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center underline"
+          class="block xl:hidden text-[20px] text-[#023047] w-[110px] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center underline cursor-pointer"
         >
           Meer filters
         </p>
