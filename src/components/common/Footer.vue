@@ -8,11 +8,13 @@ import ToggleSwitch from "../ToggleSwitch.vue";
       <div class="px-5 md:px-6 lg:px-0 2xl:max-w-[1640px] mx-auto container">
         <div class="flex flex-col lg:flex-row justify-between">
           <div class="pt-[60px] lg:pt-[90px]">
+            <a href="/">
             <img
               class="mb-8 cursor-pointer h-12 h-[60px] w-64 lg:w-full"
               src="/Logo.svg"
               alt="Logo"
             >
+          </a>
             <ToggleSwitch />
           </div>
           <div

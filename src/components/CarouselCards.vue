@@ -8,7 +8,7 @@
       >
         Laatst toegevoegde panden
       </p>
-      <p class="text-[#023047] text-[20px] font-normal underline">
+      <p class="text-[#023047] text-[20px] font-normal underline cursor-pointer">
         Bekijk alle panden
       </p>
     </div>

@@ -86,7 +86,7 @@
               </select>
 
               <p
-                class="text-[20px] text-[#023047] w-full sm:mt-0 mt-5 sm:text-left text-center underline"
+                class="text-[20px] text-[#023047] w-full sm:mt-0 mt-5 sm:text-left text-center underline cursor-pointer"
               >
                 Meer filters
               </p>
