@@ -69,7 +69,7 @@
               }}</span>
             </div>
             <div
-              class="bg-[#96a6af] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4 cursor-pointer"
+              class="bg-[#7b96a7] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4 cursor-pointer"
               @click="toggleHeart(index)"
             >
               <img

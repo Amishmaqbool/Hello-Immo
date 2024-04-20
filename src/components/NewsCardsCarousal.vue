@@ -22,7 +22,7 @@
           class="rounded-2xl w-[80%] xl:w-[400px] 2xl:w-[520px] h-full 2xl:h-[400px] relative"
         >
           <div
-            class="bg-gradient-to-b from-gray-300 via-slate-700 to-black h-full absolute opacity-60 w-full rounded-2xl lg:py-0 py-10"
+            class="bg-gradient-to-b from-transparent via-transparent to-[#023047] h-full absolute opacity-110 w-full rounded-2xl lg:py-0 py-10"
           />
           <img
             :src="slide.image"

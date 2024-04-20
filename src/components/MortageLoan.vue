@@ -2,7 +2,7 @@
   <div class="bg-[#034465] lg:rounded-br-[120px]">
     <div
       class="py-[60px] 2xl:max-w-[1640px] container mx-auto sm:px-0 px-5"
-      :class="{ 'lg:py-0 2xl:max-w-full pr-5': isSearchPage }"
+      :class="{ 'lg:py-0 2xl:max-w-full min-[2000px]:max-w-[1640px] pr-5': isSearchPage }"
     >
       <div class="lg:flex items-center gap-32 2xl:gap-40">
         <div
