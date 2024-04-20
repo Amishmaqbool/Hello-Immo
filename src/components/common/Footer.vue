@@ -76,7 +76,7 @@ import ToggleSwitch from "../ToggleSwitch.vue";
             </div>
           </div>
         </div>
-        <hr class="h-[2px] mb-5 bg-[#7f939e] mt-[100px] lg:mt-[150px] opacity-50" />
+        <hr class="h-[2px] mb-5 bg-[#7f939e] mt-[100px] lg:mt-[100px] opacity-50" />
         <div class="pb-[20px] flex justify-between flex-wrap items-center">
           <div class="flex gap-[37px]">
             <p
