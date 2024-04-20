@@ -180,20 +180,20 @@
       </div>
     </div>
     <div
-      class="flex gap-2 items-center bg-[#034465] font-medium text-white text-[18px] px-3 py-1 rounded-[20px] border-[1.5px] border-[#023047]"
+      class="flex gap-2 items-center bg-[#034465] font-medium text-white text-[18px] px-3 py-1 rounded-[20px] border-[1.5px] border-[#023047] cursor-pointer"
       @click="toggleHeart"
     >
       <img
         v-if="!isHeartActive"
         src="../assets/heart-outline.svg"
         alt="heart"
-        class="h-4 w-4 cursor-pointer"
+        class="h-4 w-4"
       >
       <img
         v-else
         src="../assets/heart-outlineRed.svg"
         alt="heart"
-        class="h-4 w-4 cursor-pointer"
+        class="h-4 w-4"
       >
       <p>Bewaar zoekactie</p>
     </div>

@@ -15,7 +15,7 @@
         </p>
         <select
           v-model="selected"
-          class="custom-select px-2 w-[150px] font-[500] text-[20px] text-[#023047]"
+          class="custom-select px-2 w-[150px] font-[500] text-[20px] text-[#023047] border-b-2 border-[#023047]"
         >
           <option
             disabled
