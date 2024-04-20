@@ -9,27 +9,17 @@
     <nav>
       <div class="xl:flex justify-between">
         <div class="flex justify-between xl:gap-[18px] items-center">
-          <a href="/">
-            <img
-              src="/Logo.svg"
-              alt=""
-              class="sm:w-auto w-[200px]"
-            >
-          </a>
+          <router-link :to="{ name: 'home', params: '/' }">
+            <img src="/Logo.svg" alt="" class="sm:w-auto w-[200px]" />
+          </router-link>
+
           <div class="z-50 flex gap-2 items-center">
             <div class="sm:block hidden">
               <ToggleSwitch />
             </div>
             <div class="xl:hidden">
-              <button
-                class="p-2"
-                @click="toggleMobileMenu"
-              >
-                <img
-                  class="h-6 w-6"
-                  src="/menu.png"
-                  alt="Menu"
-                >
+              <button class="p-2" @click="toggleMobileMenu">
+                <img class="h-6 w-6" src="/menu.png" alt="Menu" />
               </button>
             </div>
           </div>
@@ -38,9 +28,9 @@
         <div class="z-50 xl:block hidden">
           <div class="flex items-center gap-4 2xl:gap-[43px]">
             <router-link
-              to="/search"
               class="font-medium text-[24px] text-[#023047] cursor-pointer"
               :class="{ 'border-b-[3px] border-red-500': isSearchPage }"
+              :to="{ name: 'search', params: '/search' }"
             >
               Panden te koop
             </router-link>
@@ -50,13 +40,8 @@
             <div
               class="px-7 py-3 flex items-center gap-3 rounded-full cursor-pointer bg-[#034465]"
             >
-              <p class="font-semibold text-[22px] text-white">
-                Contacteer ons
-              </p>
-              <img
-                src="/ArrowRightWhite.svg"
-                alt=""
-              >
+              <p class="font-semibold text-[22px] text-white">Contacteer ons</p>
+              <img src="/ArrowRightWhite.svg" alt="" />
             </div>
           </div>
         </div>
@@ -74,18 +59,11 @@
         class="absolute top-2 right-4 p-2 rounded-full border border-black mb-5"
         @click="toggleMobileMenu"
       >
-        <img
-          class="h-4 w-4"
-          src="/CloseIcon.svg"
-          alt="Close"
-        >
+        <img class="h-4 w-4" src="/CloseIcon.svg" alt="Close" />
       </button>
       <ul class="mt-16 space-y-4">
         <div class="px-5">
-          <img
-            src="/Logo.svg"
-            alt=""
-          >
+          <img src="/Logo.svg" alt="" />
         </div>
         <li>
           <router-link
@@ -96,57 +74,41 @@
           </router-link>
         </li>
         <li>
-          <a
-            href="#"
-            class="block px-4 py-2 text-lg font-medium text-[#023047]"
-          >Hypotheeklening</a>
+          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
+            >Hypotheeklening</a
+          >
         </li>
         <li>
-          <a
-            href="#"
-            class="block px-4 py-2 text-lg font-medium text-[#023047]"
-          >Contacteer ons</a>
+          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
+            >Contacteer ons</a
+          >
         </li>
         <li>
-          <a
-            href="#"
-            class="block px-4 py-2 text-lg font-medium text-[#023047]"
-          >Nieuws</a>
+          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
+            >Nieuws</a
+          >
         </li>
         <li>
-          <a
-            href="#"
-            class="block px-4 py-2 text-lg font-medium text-[#023047]"
-          >Over ons</a>
+          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
+            >Over ons</a
+          >
         </li>
         <li>
           <a
             href="#"
             class="block px-4 py-2 text-lg font-medium text-[#023047] flex gap-2 items-center"
           >
-            <img
-              src="/FeatherUser.svg"
-              width="20"
-              height="20"
-              alt="stars"
-            >
+            <img src="/FeatherUser.svg" width="20" height="20" alt="stars" />
             Inloggen
           </a>
         </li>
         <div class="md:flex p-4 items-center">
-          <h1 class="text-[20px] text-[#023047] font-bold opacity-70">
-            4,8
-          </h1>
+          <h1 class="text-[20px] text-[#023047] font-bold opacity-70">4,8</h1>
           <p class="text-[#023047] font-normal opacity-70 sm:pt-0 pt-2">
             (Google reviews)
           </p>
           <div class="md:pl-4 sm:pt-0 pt-2">
-            <img
-              src="/BannerStars.svg"
-              width="50"
-              height="30"
-              alt="stars"
-            >
+            <img src="/BannerStars.svg" width="50" height="30" alt="stars" />
           </div>
         </div>
       </ul>
