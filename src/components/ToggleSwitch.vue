@@ -5,10 +5,10 @@
     <button
       :class="
         isForSale
-          ? 'bg-red text-white text-xl font-bold'
+          ? 'bg-red text-white text-base sm:text-xl font-bold'
           : 'text-gray-600 bg-white opacity-[.30] font-medium text-darkblue cursor-pointer'
       "
-      class="px-4 py-[2px] lg:py-[.25rem] rounded-full focus:outline-none transition-colors"
+      class="px-5 py-[2px] lg:py-2 rounded-full focus:outline-none transition-colors"
       @click="toggle('forSale')"
     >
       TE KOOP
@@ -16,10 +16,10 @@
     <button
       :class="
         !isForSale
-          ? 'bg-red text-white text-xl font-bold'
+          ? 'bg-red text-white text-base sm:text-xl font-bold'
           : 'text-gray-600 bg-white opacity-[.30] font-medium text-darkblue cursor-pointer'
       "
-      class="px-4 py-[2px] lg:py-[.25rem] rounded-full focus:outline-none transition-colors"
+      class="px-5 py-[2px] lg:py-2 rounded-full focus:outline-none transition-colors"
       @click="toggle('forRent')"
     >
       TE HUUR

@@ -3,7 +3,7 @@
     <div
       class="sm:flex items-center justify-between xl:gap-[24px] 2xl:gap-[40px]"
     >
-      <ToggleSwitch class="w-[230px] lg:w-[24%] xl:w-[22%] 2xl:w-[15%]" />
+      <ToggleSwitch class="w-[246px] sm:w-[286px] lg:w-[26%] xl:w-[24%] 2xl:w-[16.5%]" />
       <select
         v-model="selectedOption"
         class="hidden xl:block rounded-[30px] border-[1.5px] border-darkblue pl-5 py-2 w-[22%] xl:w-[25%] custom-select font-[500] text-xl text-darkblue"
@@ -42,7 +42,7 @@
 
       <div class="sm:flex items-center gap-[24px]">
         <p
-          class="block xl:hidden text-xl text-darkblue w-[110px] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center underline cursor-pointer"
+          class="block sm:hidden md:block xl:hidden text-xl text-darkblue w-[110px] xl:w-[9%] sm:mt-0 mt-5 sm:text-left text-center underline cursor-pointer"
         >
           Meer filters
         </p>
@@ -59,6 +59,11 @@
     </div>
 
     <div>
+      <p
+          class="hidden sm:block md:hidden text-xl text-darkblue w-[110px] xl:w-[9%] mt-3 sm:text-left text-center underline cursor-pointer"
+        >
+          Meer filters
+        </p>
       <select
         v-model="selectedOption"
         class="mt-5 block xl:hidden custom-select rounded-[30px] border-[1.5px] border-darkblue px-5 py-2 w-[100%] sm:w-[70%] xl:w-[25%] font-[500] text-xl text-darkblue"
