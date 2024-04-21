@@ -21,47 +21,47 @@ import ToggleSwitch from "../ToggleSwitch.vue";
             class="flex flex-col sm:flex-row xl:grid gap-8 sm:gap-8 md:gap-24 lg:gap-[50px] xl:gap-[70px] grid-cols-3 pt-[35px] md:pt-[75px] lg:pt-[105px]"
           >
             <div class="text-darkblue leading-tight">
-              <h6 class="font-medium text-[20px] lg:text-[24px] text-darkblue">
+              <h6 class="font-medium text-xl lg:text-2xl text-darkblue">
                 Menu
               </h6>
               <p
-                class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer text-darkblue py-1"
+                class="font-normal text-4 lg:text-xl pt-[15px] cursor-pointer text-darkblue py-1"
               >
                 Nieuws
               </p>
               <p
-                class="font-normal text-4 lg:text-[20px] cursor-pointer text-darkblue py-1"
+                class="font-normal text-4 lg:text-xl cursor-pointer text-darkblue py-1"
               >
                 Over ons
               </p>
               <p
-                class="font-normal text-4 lg:text-[20px] cursor-pointer text-darkblue py-1"
+                class="font-normal text-4 lg:text-xl cursor-pointer text-darkblue py-1"
               >
                 Contact
               </p>
             </div>
 
             <div class="text-darkblue leading-tight">
-              <h6 class="font-medium text-[20px] lg:text-[24px] text-darkblue">
+              <h6 class="font-medium text-xl lg:text-2xl text-darkblue">
                 Panden te koop
               </h6>
               <p
-                class="font-normal text-4 lg:text-[20px] pt-[15px] cursor-pointer text-darkblue py-1"
+                class="font-normal text-4 lg:text-xl pt-[15px] cursor-pointer text-darkblue py-1"
               >
                 Huis
               </p>
               <p
-                class="font-normal text-4 lg:text-[20px] cursor-pointer text-darkblue py-1"
+                class="font-normal text-4 lg:text-xl cursor-pointer text-darkblue py-1"
               >
                 Appartement
               </p>
               <p
-                class="font-normal text-4 lg:text-[20px] cursor-pointer text-darkblue py-1"
+                class="font-normal text-4 lg:text-xl cursor-pointer text-darkblue py-1"
               >
                 Nieuwbouwproject
               </p>
               <p
-                class="font-normal text-4 lg:text-[20px] cursor-pointer text-darkblue py-1"
+                class="font-normal text-4 lg:text-xl cursor-pointer text-darkblue py-1"
               >
                 Kantoor
               </p>
@@ -69,7 +69,7 @@ import ToggleSwitch from "../ToggleSwitch.vue";
 
             <div class="text-darkblue">
               <h6
-                class="pr-0 lg:pr-[40px] font-medium text-[20px] lg:text-[24px]"
+                class="pr-0 lg:pr-[40px] font-medium text-xl lg:text-2xl"
               >
                 Hypotheeklening
               </h6>
@@ -80,18 +80,18 @@ import ToggleSwitch from "../ToggleSwitch.vue";
         <div class="pb-[20px] flex justify-between flex-wrap items-center">
           <div class="flex gap-[37px]">
             <p
-              class="font-normal text-4 lg:text-[20px] text-darkblue cursor-pointer opacity-[0.50]"
+              class="font-normal text-4 lg:text-xl text-darkblue cursor-pointer opacity-[0.50]"
             >
               Privacy policy
             </p>
             <p
-              class="font-normal text-4 lg:text-[20px] text-darkblue cursor-pointer opacity-[0.50]"
+              class="font-normal text-4 lg:text-xl text-darkblue cursor-pointer opacity-[0.50]"
             >
               Cookiestatement
             </p>
           </div>
           <p
-            class="font-normal text-4 lg:text-[20px] text-darkblue opacity-[0.50]"
+            class="font-normal text-4 lg:text-xl text-darkblue opacity-[0.50]"
           >
             Madeby
           </p>

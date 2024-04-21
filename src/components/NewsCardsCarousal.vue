@@ -4,12 +4,12 @@
       class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center"
     >
       <p
-        class="text-[28px] sm:text-[44px] text-darkblue font-bold font-[Cabin]"
+        class="text-medium sm:text-xlarge text-darkblue font-bold font-[Cabin]"
       >
         Laatste nieuws
       </p>
       <p
-        class="text-darkblue text-[20px] font-normal underline cursor-pointer"
+        class="text-darkblue text-xl font-normal underline cursor-pointer"
       >
         Bekijk alle artikels
       </p>
@@ -30,12 +30,12 @@
           <div
             class="bg-blue lg:w-fit px-4 pt-[7px] pb-1 rounded-[20px] absolute left-3 top-7"
           >
-            <span class="text-white text-[18px] font-bold">{{
+            <span class="text-white text-lg font-bold">{{
               slide.date
             }}</span>
           </div>
           <p
-            class="text-white lg:text-[20px] xl:text-[28px] font-bold text-left px-4 lg:pl-3 py-5 absolute bottom-0 shadow-lg w-[90%]"
+            class="text-white lg:text-xl xl:text-medium font-bold text-left px-4 lg:pl-3 py-5 absolute bottom-0 shadow-lg w-[90%]"
           >
             {{ slide.text }}
           </p>

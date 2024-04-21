@@ -5,7 +5,7 @@
     <button
       :class="
         isForSale
-          ? 'bg-red text-white text-[20px] font-bold'
+          ? 'bg-red text-white text-xl font-bold'
           : 'text-gray-600 bg-white opacity-[.30] font-medium text-darkblue cursor-pointer'
       "
       class="px-4 py-[2px] lg:py-[.25rem] rounded-full focus:outline-none transition-colors"
@@ -16,7 +16,7 @@
     <button
       :class="
         !isForSale
-          ? 'bg-red text-white text-[20px] font-bold'
+          ? 'bg-red text-white text-xl font-bold'
           : 'text-gray-600 bg-white opacity-[.30] font-medium text-darkblue cursor-pointer'
       "
       class="px-4 py-[2px] lg:py-[.25rem] rounded-full focus:outline-none transition-colors"

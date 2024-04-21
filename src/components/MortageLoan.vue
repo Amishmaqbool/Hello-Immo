@@ -38,7 +38,7 @@
           :class="{ 'py-[60px] lg:pt-[60px] pt-[65px] pr-5': isSearchPage }"
         >
           <h1
-            class="text-[44px] text-white font-[Cabin] font-extrabold leading-[50px] relative z-50"
+            class="text-xlarge text-white font-[Cabin] font-extrabold leading-[50px] relative z-50"
           >
             Wij helpen je met jouw
             <span class="z-50"> hypothecaire lening </span>
@@ -49,14 +49,14 @@
             class="w-[394px] mt-[-25px] ml-[-10px] z-0"
             style="transform: translateY(10%)"
           />
-          <p class="text-white text-[20px] pt-[30px]">
+          <p class="text-white text-xl pt-[30px]">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum. Stet clita kasd gubergren, no sea
           </p>
           <button
-            class="bg-white text-darkblue font-medium sm:text-[22px] rounded-[25px] px-6 py-2 mt-[60px] flex gap-2 items-center"
+            class="bg-white text-darkblue font-medium sm:text-small rounded-[25px] px-6 py-2 mt-[60px] flex gap-2 items-center"
           >
             Vraag uw hypotheek lening aan
             <img src="/ArrowRight.svg" alt="MortageFamily" />

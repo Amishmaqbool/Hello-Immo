@@ -5,15 +5,15 @@
     </div>
     <div class="sm:flex justify-between pt-10 pb-10 items-center">
       <p
-        class="text-[28px] sm:text-[44px] text-darkblue font-bold font-[Cabin]"
+        class="text-medium sm:text-xlarge text-darkblue font-bold font-[Cabin]"
       >
         Huis te koop
       </p>
-      <div class="flex items-center text-darkblue text-[20px] font-normal">
+      <div class="flex items-center text-darkblue text-xl font-normal">
         <p class="opacity-[0.65]">Sorteren op:</p>
         <select
           v-model="selected"
-          class="custom-select px-2 w-[150px] font-[500] text-[20px] text-darkblue border-b-2 border-darkblue"
+          class="custom-select px-2 w-[150px] font-[500] text-xl text-darkblue border-b-2 border-darkblue"
         >
           <option disabled value="">Relevantie</option>
           <option value="Option 1">Option 1</option>
@@ -44,12 +44,12 @@
             <div
               class="bg-red px-4 py-1 rounded-[20px] absolute top-2 left-4"
             >
-              <span class="text-white text-[18px] font-bold">NIEUW</span>
+              <span class="text-white text-lg font-bold">NIEUW</span>
             </div>
             <div
               class="bg-blue w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-56 max-[400px]:top-40 xl:top-64 2xl:top-[270px]"
             >
-              <span class="text-white font-bold text-[22px]">{{
+              <span class="text-white font-bold text-small">{{
                 slide.price
               }}</span>
             </div>
@@ -72,7 +72,7 @@
             </div>
             <div>
               <p
-                class="text-darkblue text-[28px] font-bold px-8 text-left py-5"
+                class="text-darkblue text-medium font-bold px-8 text-left py-5"
               >
                 {{ slide.text }}
               </p>

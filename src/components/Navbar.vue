@@ -28,21 +28,21 @@
         <div class="z-50 xl:block hidden my-auto">
           <div class="flex items-center gap-4 2xl:gap-[43px]">
             <router-link
-              class="font-medium text-[24px] hover:border-b-[3px] hover:border-red text-darkblue cursor-pointer"
+              class="font-medium text-2xl hover:border-b-[3px] hover:border-red text-darkblue cursor-pointer"
               :class="{ 'border-b-[3px] border-red': isSearchPage }"
               :to="{ name: 'search', params: '/search' }"
             >
               Panden te koop
             </router-link>
             <p
-              class="font-medium text-[24px] hover:border-b-[3px] hover:border-red text-darkblue cursor-pointer"
+              class="font-medium text-2xl hover:border-b-[3px] hover:border-red text-darkblue cursor-pointer"
             >
               Hypotheeklening
             </p>
             <div
               class="px-6 py-2 flex items-center gap-3 rounded-full cursor-pointer bg-blue"
             >
-              <p class="font-semibold text-[22px] text-white">Contacteer ons</p>
+              <p class="font-semibold text-small text-white">Contacteer ons</p>
               <img src="/ArrowRightWhite.svg" alt="" />
             </div>
           </div>
@@ -105,7 +105,7 @@
           </a>
         </li>
         <div class="md:flex p-4 items-center">
-          <h1 class="text-[20px] text-darkblue font-bold opacity-70">4,8</h1>
+          <h1 class="text-xl text-darkblue font-bold opacity-70">4,8</h1>
           <p class="text-darkblue font-normal opacity-70 sm:pt-0 pt-2">
             (Google reviews)
           </p>

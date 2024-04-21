@@ -14,6 +14,13 @@ export default {
         BlueStone: "#80939f",
 
       },
+      fontSize: {
+        'small': '22px',    
+        'medium': '28px',   
+        'large': '40px',    
+        'xlarge': '44px',   
+        'xxlarge': '56px',  
+      },
     },
   },
   plugins: [],

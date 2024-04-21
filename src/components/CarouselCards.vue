@@ -4,12 +4,12 @@
       class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center"
     >
       <p
-        class="text-[28px] sm:text-[44px] text-darkblue font-bold font-[Cabin]"
+        class="text-medium sm:text-xlarge text-darkblue font-bold font-[Cabin]"
       >
         Laatst toegevoegde panden
       </p>
       <p
-        class="text-darkblue text-[20px] font-normal underline cursor-pointer"
+        class="text-darkblue text-xl font-normal underline cursor-pointer"
       >
         Bekijk alle panden
       </p>
@@ -27,12 +27,12 @@
           <div
             class="bg-red px-4 py-1 rounded-[20px] absolute top-2 left-4"
           >
-            <span class="text-white text-[18px] font-bold">NIEUW</span>
+            <span class="text-white text-lg font-bold">NIEUW</span>
           </div>
           <div
             class="bg-blue w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-56 max-[400px]:top-40 xl:top-64 2xl:top-[270px]"
           >
-            <span class="text-white font-bold text-[22px]">{{
+            <span class="text-white font-bold text-small">{{
               slide.price
             }}</span>
           </div>
@@ -55,7 +55,7 @@
           </div>
           <div>
             <p
-              class="text-darkblue text-[28px] font-bold px-8 text-left pt-5 pb-3"
+              class="text-darkblue text-medium font-bold px-8 text-left pt-5 pb-3"
             >
               {{ slide.text }}
             </p>
