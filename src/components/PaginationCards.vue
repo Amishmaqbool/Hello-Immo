@@ -30,7 +30,7 @@
         :on-click="onClickHandler"
       />
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 justify-between"
+        class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-12 justify-between"
       >
         <div v-for="(slide, index) in displayedSlides" :key="index" class="">
           <div
@@ -47,7 +47,7 @@
               <span class="text-white text-lg font-bold">NIEUW</span>
             </div>
             <div
-              class="bg-blue w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-56 max-[400px]:top-40 xl:top-64 2xl:top-[270px]"
+              class="bg-blue w-fit px-4 py-[3px] rounded-[20px] absolute right-4 sm:right-3 top-[165px] sm:top-56 max-[400px]:top-[120px] xl:top-64 2xl:top-[270px]"
             >
               <span class="text-white font-bold text-small">{{
                 slide.price
