@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#034465] lg:rounded-br-[120px]">
+  <div class="bg-blue lg:rounded-br-[120px]">
     <div
       class="py-[60px] 2xl:max-w-[1640px] container mx-auto sm:px-0 px-5"
       :class="{
@@ -13,7 +13,7 @@
         >
           <div
             :class="{
-              'opacity-110 absolute bg-gradient-to-r from-transparent via-neutral to-[#044464] h-full w-full':
+              'opacity-110 absolute bg-gradient-to-r from-transparent via-neutral to-blue h-full w-full':
                 isSearchPage,
             }"
           />
@@ -56,7 +56,7 @@
             et ea rebum. Stet clita kasd gubergren, no sea
           </p>
           <button
-            class="bg-white text-[#023047] font-medium sm:text-[22px] rounded-[25px] px-8 py-2 mt-[60px] flex gap-2 items-center"
+            class="bg-white text-darkblue font-medium sm:text-[22px] rounded-[25px] px-6 py-2 mt-[60px] flex gap-2 items-center"
           >
             Vraag uw hypotheek lening aan
             <img src="/ArrowRight.svg" alt="MortageFamily" />

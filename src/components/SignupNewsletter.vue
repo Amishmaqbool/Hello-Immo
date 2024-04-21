@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto sm:mb-40 sm:px-0 px-5 xl:w-[1360px] pt-20">
-    <div class="bg-[#034465] rounded-[20px]">
+    <div class="bg-blue rounded-[20px]">
       <div class="py-[80px] px-5 sm:px-10 lg:px-[220px] text-center">
         <div class="relative inline-block">
           <h1 class="text-white text-[36px] font-semibold font-[Cabin]">
@@ -24,11 +24,11 @@
         </p>
         <div class="pt-[40px] sm:flex items-center justify-center gap-[18px]">
           <input
-            class="rounded-[30px] px-6 py-3 text-[20px] placeholder-[#023047] font-semibold sm:w-[380px]"
+            class="rounded-[30px] px-6 py-2 text-[20px] placeholder-darkblue font-semibold sm:w-[380px]"
             placeholder="E-mailadres"
           />
           <button
-            class="text-[white] text-[20px] bg-[#D10909] px-4 py-2 rounded-full sm:mt-0 mt-4"
+            class="text-[white] text-[20px] bg-red px-6 py-2 rounded-full sm:mt-0 mt-4"
           >
             Inschrijven
           </button>

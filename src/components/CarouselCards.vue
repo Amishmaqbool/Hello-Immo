@@ -4,12 +4,12 @@
       class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center"
     >
       <p
-        class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
+        class="text-[28px] sm:text-[44px] text-darkblue font-bold font-[Cabin]"
       >
         Laatst toegevoegde panden
       </p>
       <p
-        class="text-[#023047] text-[20px] font-normal underline cursor-pointer"
+        class="text-darkblue text-[20px] font-normal underline cursor-pointer"
       >
         Bekijk alle panden
       </p>
@@ -25,19 +25,19 @@
             class="w-full sm:w-[520px] h-full sm:h-[320px]"
           />
           <div
-            class="bg-[#d10909] px-4 py-1 rounded-[20px] absolute top-2 left-4"
+            class="bg-red px-4 py-1 rounded-[20px] absolute top-2 left-4"
           >
             <span class="text-white text-[18px] font-bold">NIEUW</span>
           </div>
           <div
-            class="bg-[#034465] w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-56 max-[400px]:top-40 xl:top-64 2xl:top-[270px]"
+            class="bg-blue w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-56 max-[400px]:top-40 xl:top-64 2xl:top-[270px]"
           >
             <span class="text-white font-bold text-[22px]">{{
               slide.price
             }}</span>
           </div>
           <div
-            class="bg-[#7b96a7] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4 cursor-pointer"
+            class="bg-SteelBlueGray border-darkblue border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4 cursor-pointer"
             @click="toggleHeart(slide)"
           >
             <img
@@ -55,7 +55,7 @@
           </div>
           <div>
             <p
-              class="text-[#023047] text-[28px] font-bold px-8 text-left pt-5 pb-3"
+              class="text-darkblue text-[28px] font-bold px-8 text-left pt-5 pb-3"
             >
               {{ slide.text }}
             </p>

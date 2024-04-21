@@ -8,7 +8,7 @@ import PaginationCards from "../components/PaginationCards.vue";
 <template>
   <Layout>
     <Navbar />
-    <div class="bg-[#F4F4F4]">
+    <div class="bg-primary">
       <PaginationCards />
     </div>
     <MortageLoan />

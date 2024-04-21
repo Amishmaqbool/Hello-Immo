@@ -4,12 +4,12 @@
       class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center"
     >
       <p
-        class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
+        class="text-[28px] sm:text-[44px] text-darkblue font-bold font-[Cabin]"
       >
         Laatste nieuws
       </p>
       <p
-        class="text-[#023047] text-[20px] font-normal underline cursor-pointer"
+        class="text-darkblue text-[20px] font-normal underline cursor-pointer"
       >
         Bekijk alle artikels
       </p>
@@ -20,7 +20,7 @@
           class="rounded-2xl w-[80%] xl:w-[400px] 2xl:w-[520px] h-full 2xl:h-[400px] relative cursor-pointer"
         >
           <div
-            class="bg-gradient-to-b from-transparent via-transparent to-[#023047] h-full absolute opacity-110 w-full rounded-2xl lg:py-0 py-10"
+            class="bg-gradient-to-b from-transparent via-transparent to-darkblue h-full absolute opacity-110 w-full rounded-2xl lg:py-0 py-10"
           />
           <img
             :src="slide.image"
@@ -28,7 +28,7 @@
             class="lg:object-fill h-full"
           />
           <div
-            class="bg-[#034465] lg:w-fit px-4 pt-[7px] pb-1 rounded-[20px] absolute left-3 top-7"
+            class="bg-blue lg:w-fit px-4 pt-[7px] pb-1 rounded-[20px] absolute left-3 top-7"
           >
             <span class="text-white text-[18px] font-bold">{{
               slide.date

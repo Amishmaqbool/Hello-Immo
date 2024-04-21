@@ -25,22 +25,22 @@
           </div>
         </div>
 
-        <div class="z-50 xl:block hidden">
+        <div class="z-50 xl:block hidden my-auto">
           <div class="flex items-center gap-4 2xl:gap-[43px]">
             <router-link
-              class="font-medium text-[24px] hover:border-b-[3px] hover:border-red-500 text-[#023047] cursor-pointer"
-              :class="{ 'border-b-[3px] border-red-500': isSearchPage }"
+              class="font-medium text-[24px] hover:border-b-[3px] hover:border-red text-darkblue cursor-pointer"
+              :class="{ 'border-b-[3px] border-red': isSearchPage }"
               :to="{ name: 'search', params: '/search' }"
             >
               Panden te koop
             </router-link>
             <p
-              class="font-medium text-[24px] hover:border-b-[3px] hover:border-red-500 text-[#023047] cursor-pointer"
+              class="font-medium text-[24px] hover:border-b-[3px] hover:border-red text-darkblue cursor-pointer"
             >
               Hypotheeklening
             </p>
             <div
-              class="px-7 py-3 flex items-center gap-3 rounded-full cursor-pointer bg-[#034465]"
+              class="px-6 py-2 flex items-center gap-3 rounded-full cursor-pointer bg-blue"
             >
               <p class="font-semibold text-[22px] text-white">Contacteer ons</p>
               <img src="/ArrowRightWhite.svg" alt="" />
@@ -70,43 +70,43 @@
         <li>
           <router-link
             to="/search"
-            class="block px-4 py-2 text-lg font-medium text-[#023047]"
+            class="block px-4 py-2 text-lg font-medium text-darkblue"
           >
             Panden te koop
           </router-link>
         </li>
         <li>
-          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
+          <a href="#" class="block px-4 py-2 text-lg font-medium text-darkblue"
             >Hypotheeklening</a
           >
         </li>
         <li>
-          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
+          <a href="#" class="block px-4 py-2 text-lg font-medium text-darkblue"
             >Contacteer ons</a
           >
         </li>
         <li>
-          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
+          <a href="#" class="block px-4 py-2 text-lg font-medium text-darkblue"
             >Nieuws</a
           >
         </li>
         <li>
-          <a href="#" class="block px-4 py-2 text-lg font-medium text-[#023047]"
+          <a href="#" class="block px-4 py-2 text-lg font-medium text-darkblue"
             >Over ons</a
           >
         </li>
         <li>
           <a
             href="#"
-            class="block px-4 py-2 text-lg font-medium text-[#023047] flex gap-2 items-center"
+            class="block px-4 py-2 text-lg font-medium text-darkblue flex gap-2 items-center"
           >
             <img src="/FeatherUser.svg" width="20" height="20" alt="stars" />
             Inloggen
           </a>
         </li>
         <div class="md:flex p-4 items-center">
-          <h1 class="text-[20px] text-[#023047] font-bold opacity-70">4,8</h1>
-          <p class="text-[#023047] font-normal opacity-70 sm:pt-0 pt-2">
+          <h1 class="text-[20px] text-darkblue font-bold opacity-70">4,8</h1>
+          <p class="text-darkblue font-normal opacity-70 sm:pt-0 pt-2">
             (Google reviews)
           </p>
           <div class="md:pl-4 sm:pt-0 pt-2">

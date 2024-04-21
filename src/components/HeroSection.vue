@@ -8,23 +8,23 @@
         class="2xl:max-w-[700px] px-5 container sm:mx-auto lg:pl-20 2xl:pl-10"
       >
         <h1
-          class="text-[40px] sm:text-[56px] text-[#023047] font-[Cabin] leading-[60px] 2xl:w-[100%]"
+          class="text-[40px] sm:text-[56px] text-darkblue font-[Cabin] leading-[60px] 2xl:w-[100%]"
         >
           Wij helpen je een <br />
           thuis vinden én financieren
         </h1>
-        <p class="text-[#023047] text-[20px] pt-10 2xl:w-[720px]">
+        <p class="text-darkblue text-[20px] pt-10 2xl:w-[720px]">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
         </p>
         <div
-          class="bg-[#F4F4F4] rounded-[20px] py-[40px] px-[32px] mt-[55px] mb-10 2xl:mb-0"
+          class="bg-primary rounded-[20px] py-[40px] px-[32px] mt-[55px] mb-10 2xl:mb-0"
         >
           <ToggleSwitch />
           <div class="pt-5">
             <select
               v-model="selected"
-              class="custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
+              class="custom-select rounded-[30px] border-[1.5px] border-darkblue px-5 py-3 w-full font-[500] text-[20px] text-darkblue"
             >
               <option disabled value="">Gemeente of postcode</option>
               <option value="Option 1">Option 1</option>
@@ -37,7 +37,7 @@
             <div class="sm:flex gap-x-[32px] items-center pt-8">
               <select
                 v-model="selected2"
-                class="custom-select rounded-[30px] border-[1.5px] border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
+                class="custom-select rounded-[30px] border-[1.5px] border-darkblue px-5 py-3 w-full font-[500] text-[20px] text-darkblue"
               >
                 <option disabled value="">Type</option>
                 <option value="Option 1">Option 1</option>
@@ -46,7 +46,7 @@
 
               <select
                 v-model="selected3"
-                class="custom-select rounded-[30px] border-[1.5px] sm:mt-0 mt-5 border-[#023047] px-5 py-3 w-full font-[500] text-[20px] text-[#023047]"
+                class="custom-select rounded-[30px] border-[1.5px] sm:mt-0 mt-5 border-darkblue px-5 py-3 w-full font-[500] text-[20px] text-darkblue"
               >
                 <option disabled value="">Prijis</option>
                 <option value="Option 1">Option 1</option>
@@ -54,7 +54,7 @@
               </select>
 
               <p
-                class="text-[20px] text-[#023047] w-full sm:mt-0 mt-5 sm:text-left text-center underline cursor-pointer"
+                class="text-[20px] text-darkblue w-full sm:mt-0 mt-5 sm:text-left text-center underline cursor-pointer"
               >
                 Meer filters
               </p>
@@ -62,7 +62,7 @@
 
             <div class="flex justify-center sm:justify-start">
               <button
-                class="bg-[#034465] text-white font-medium text-[22px] rounded-[25px] px-5 py-2 mt-8 flex gap-4 items-center"
+                class="bg-blue text-white font-medium text-[22px] rounded-[25px] px-5 py-2 mt-8 flex gap-4 items-center"
               >
                 Zoek pand
                 <img src="/Search.svg" alt="MortageFamily" />

@@ -5,15 +5,15 @@
     </div>
     <div class="sm:flex justify-between pt-10 pb-10 items-center">
       <p
-        class="text-[28px] sm:text-[44px] text-[#023047] font-bold font-[Cabin]"
+        class="text-[28px] sm:text-[44px] text-darkblue font-bold font-[Cabin]"
       >
         Huis te koop
       </p>
-      <div class="flex items-center text-[#023047] text-[20px] font-normal">
+      <div class="flex items-center text-darkblue text-[20px] font-normal">
         <p class="opacity-[0.65]">Sorteren op:</p>
         <select
           v-model="selected"
-          class="custom-select px-2 w-[150px] font-[500] text-[20px] text-[#023047] border-b-2 border-[#023047]"
+          class="custom-select px-2 w-[150px] font-[500] text-[20px] text-darkblue border-b-2 border-darkblue"
         >
           <option disabled value="">Relevantie</option>
           <option value="Option 1">Option 1</option>
@@ -42,19 +42,19 @@
               class="w-full sm:w-full h-full sm:h-[320px]"
             />
             <div
-              class="bg-[#d10909] px-4 py-1 rounded-[20px] absolute top-2 left-4"
+              class="bg-red px-4 py-1 rounded-[20px] absolute top-2 left-4"
             >
               <span class="text-white text-[18px] font-bold">NIEUW</span>
             </div>
             <div
-              class="bg-[#034465] w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-56 max-[400px]:top-40 xl:top-64 2xl:top-[270px]"
+              class="bg-blue w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-56 max-[400px]:top-40 xl:top-64 2xl:top-[270px]"
             >
               <span class="text-white font-bold text-[22px]">{{
                 slide.price
               }}</span>
             </div>
             <div
-              class="bg-[#7b96a7] border-[#023047] border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4 cursor-pointer"
+              class="bg-SteelBlueGray border-darkblue border-[1.5px] w-fit p-2 rounded-full absolute top-2 right-4 cursor-pointer"
               @click="toggleHeart(index)"
             >
               <img
@@ -72,7 +72,7 @@
             </div>
             <div>
               <p
-                class="text-[#023047] text-[28px] font-bold px-8 text-left py-5"
+                class="text-darkblue text-[28px] font-bold px-8 text-left py-5"
               >
                 {{ slide.text }}
               </p>

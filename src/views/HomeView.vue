@@ -14,7 +14,7 @@ import Layout from "../components/layout/Layout.vue";
       <div class="">
         <HeroSection />
       </div>
-      <div class="bg-[#F4F4F4] 2xl:mt-[-30px]">
+      <div class="bg-primary 2xl:mt-[-30px]">
         <CarouselCards />
       </div>
       <MortageLoan />
