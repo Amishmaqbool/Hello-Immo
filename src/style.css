@@ -3,75 +3,75 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Avenir";
-  src: url("@/assets/AvenirLTStd-Black.otf") format("opentype");
+    font-family: 'Avenir';
+    src: url('@/assets/AvenirLTStd-Black.otf') format('opentype');
 }
 @font-face {
-  font-family: "Helvatica";
-  src: url("@/assets/Helvetica.ttf") format("opentype");
+    font-family: 'Helvatica';
+    src: url('@/assets/Helvetica.ttf') format('opentype');
 }
 @font-face {
-  font-family: "Helvatica";
-  src: url("./assets/Helvetica-ExtraBold.ttf") format("opentype");
+    font-family: 'Helvatica';
+    src: url('./assets/Helvetica-ExtraBold.ttf') format('opentype');
 }
 @font-face {
-  font-family: "Helvatica";
-  src: url("./assets/Helvetica-Bold-Font.ttf") format("opentype");
+    font-family: 'Helvatica';
+    src: url('./assets/Helvetica-Bold-Font.ttf') format('opentype');
 }
 .helvatica-Bold {
-  font-family: "Helvatica";
-  font-weight: 800;
+    font-family: 'Helvatica';
+    font-weight: 800;
 }
 .helvatica-Extrabold {
-  font-family: "Helvatica";
-  font-weight: 900;
+    font-family: 'Helvatica';
+    font-weight: 900;
 }
 body {
-  font-family: "Avenir";
+    font-family: 'Avenir';
 }
 
 .carousel__prev {
-  left: -35px !important;
-  width: 40px !important;
-  height: 40px !important;
-  top: 40% !important;
+    left: -35px !important;
+    width: 40px !important;
+    height: 40px !important;
+    top: 40% !important;
 }
 
 .carousel__next {
-  right: -35px !important;
-  width: 40px !important;
-  height: 40px !important;
-  top: 43% !important;
+    right: -35px !important;
+    width: 40px !important;
+    height: 40px !important;
+    top: 43% !important;
 }
 
 .carousel__pagination {
-  margin-top: 35px !important;
+    margin-top: 35px !important;
 }
 .carousel__icon {
-  width: 50px !important;
-  height: 50px !important;
+    width: 50px !important;
+    height: 50px !important;
 }
 @media (max-width: 700px) {
-  .carousel__prev,
-  .carousel__next {
-    display: none !important;
-  }
+    .carousel__prev,
+    .carousel__next {
+        display: none !important;
+    }
 }
 
 .custom-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url("./assets/DownArrow.svg") no-repeat right 15px center;
-  background-size: 28px 28px;
-  cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('./assets/DownArrow.svg') no-repeat right 15px center;
+    background-size: 28px 28px;
+    cursor: pointer;
 }
 
 .custom-select::-ms-expand {
-  display: none;
+    display: none;
 }
 @media screen and (max-width: 1135px) {
-  .image-correction {
-    margin-top: -390px !important;
-  }
+    .image-correction {
+        margin-top: -390px !important;
+    }
 }

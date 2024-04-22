@@ -5,7 +5,8 @@
         </div>
         <div class="lg:flex items-center gap-20 2xl:justify-between mt-20 2xl:mt-0">
             <div class="2xl:max-w-[700px] px-5 container sm:mx-auto lg:pl-20 2xl:pl-10">
-                <h1 class="text-large sm:text-xxlarge text-darkblue font-[Cabin] font-[900] leading-[60px] 2xl:w-[100%]">
+                <h1
+                    class="text-large sm:text-xxlarge text-darkblue font-[Cabin] font-[900] leading-[60px] 2xl:w-[100%]">
                     Wij helpen je een <br />
                     thuis vinden én financieren
                 </h1>
