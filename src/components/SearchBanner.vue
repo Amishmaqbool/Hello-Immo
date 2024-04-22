@@ -49,7 +49,7 @@
 
         <div class="mt-5 sm:mt-0 xl:w-[17%]">
           <button
-            class="w-[196px] bg-blue text-white font-medium text-small rounded-[25px] px-6 py-2 flex gap-4 items-center"
+            class="w-[196px] bg-blue text-white font-medium text-sm rounded-[25px] px-6 py-2 flex gap-4 items-center"
           >
             Zoek pand
             <img src="/Search.svg" alt="MortageFamily" />

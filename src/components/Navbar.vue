@@ -42,7 +42,7 @@
             <div
               class="px-6 py-2 flex items-center gap-3 rounded-full cursor-pointer bg-blue"
             >
-              <p class="font-semibold text-small text-white">Contacteer ons</p>
+              <p class="font-semibold text-sm text-white">Contacteer ons</p>
               <img src="/ArrowRightWhite.svg" alt="" />
             </div>
           </div>

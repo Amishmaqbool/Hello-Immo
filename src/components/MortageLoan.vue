@@ -56,7 +56,7 @@
             et ea rebum. Stet clita kasd gubergren, no sea
           </p>
           <button
-            class="bg-white text-darkblue font-medium sm:text-small rounded-[25px] px-6 py-2 mt-[60px] flex gap-2 items-center"
+            class="bg-white text-darkblue font-medium sm:text-sm rounded-[25px] px-6 py-2 mt-[60px] flex gap-2 items-center"
           >
             Vraag uw hypotheek lening aan
             <img src="/ArrowRight.svg" alt="MortageFamily" />

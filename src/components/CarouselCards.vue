@@ -32,7 +32,7 @@
           <div
             class="bg-blue w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-56 max-[400px]:top-40 xl:top-64 2xl:top-[270px]"
           >
-            <span class="text-white font-bold text-small">{{
+            <span class="text-white font-bold text-sm">{{
               slide.price
             }}</span>
           </div>
