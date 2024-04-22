@@ -27,13 +27,13 @@
                 <div class="z-50 xl:block hidden my-auto">
                     <div class="flex items-center gap-4 2xl:gap-[43px]">
                         <router-link
-                            class="font-medium text-2xl hover:border-b-[3px] hover:border-red text-darkblue cursor-pointer"
+                            class="font-medium text-base hover:border-b-[3px] hover:border-red text-darkblue cursor-pointer"
                             :class="{ 'border-b-[3px] border-red': isSearchPage }"
                             :to="{ name: 'search', params: '/search' }">
                             Panden te koop
                         </router-link>
                         <p
-                            class="font-medium text-2xl hover:border-b-[3px] hover:border-red text-darkblue cursor-pointer">
+                            class="font-medium text-base hover:border-b-[3px] hover:border-red text-darkblue cursor-pointer">
                             Hypotheeklening
                         </p>
                         <div class="px-6 py-2 flex items-center gap-3 rounded-full cursor-pointer bg-blue">
@@ -59,30 +59,30 @@
                     <img src="/Logo.svg" alt="" />
                 </div>
                 <li>
-                    <router-link to="/search" class="block px-4 py-2 text-lg font-medium text-darkblue">
+                    <router-link to="/search" class="block px-4 py-2 text-xs font-medium text-darkblue">
                         Panden te koop
                     </router-link>
                 </li>
                 <li>
-                    <a href="#" class="block px-4 py-2 text-lg font-medium text-darkblue">Hypotheeklening</a>
+                    <a href="#" class="block px-4 py-2 text-xs font-medium text-darkblue">Hypotheeklening</a>
                 </li>
                 <li>
-                    <a href="#" class="block px-4 py-2 text-lg font-medium text-darkblue">Contacteer ons</a>
+                    <a href="#" class="block px-4 py-2 text-xs font-medium text-darkblue">Contacteer ons</a>
                 </li>
                 <li>
-                    <a href="#" class="block px-4 py-2 text-lg font-medium text-darkblue">Nieuws</a>
+                    <a href="#" class="block px-4 py-2 text-xs font-medium text-darkblue">Nieuws</a>
                 </li>
                 <li>
-                    <a href="#" class="block px-4 py-2 text-lg font-medium text-darkblue">Over ons</a>
+                    <a href="#" class="block px-4 py-2 text-xs font-medium text-darkblue">Over ons</a>
                 </li>
                 <li>
-                    <a href="#" class="block px-4 py-2 text-lg font-medium text-darkblue flex gap-2 items-center">
+                    <a href="#" class="block px-4 py-2 text-xs font-medium text-darkblue flex gap-2 items-center">
                         <img src="/FeatherUser.svg" width="20" height="20" alt="stars" />
                         Inloggen
                     </a>
                 </li>
                 <div class="md:flex p-4 items-center">
-                    <h1 class="text-xl text-darkblue font-bold opacity-70">4,8</h1>
+                    <h1 class="text-xsm text-darkblue font-bold opacity-70">4,8</h1>
                     <p class="text-darkblue font-normal opacity-70 sm:pt-0 pt-2">(Google reviews)</p>
                     <div class="md:pl-4 sm:pt-0 pt-2">
                         <img src="/BannerStars.svg" width="50" height="30" alt="stars" />

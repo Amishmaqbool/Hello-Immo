@@ -1,8 +1,8 @@
 <template>
     <div class="2xl:max-w-[1640px] container mx-auto sm:pb-28 sm:pt-40 py-10">
         <div class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center">
-            <p class="text-medium sm:text-xlarge text-darkblue font-bold font-[Cabin]">Laatst toegevoegde panden</p>
-            <p class="text-darkblue text-xl font-normal underline cursor-pointer">Bekijk alle panden</p>
+            <p class="text-medium sm:text-2xl text-darkblue font-bold font-[Cabin]">Laatst toegevoegde panden</p>
+            <p class="text-darkblue text-xsm font-normal underline cursor-pointer">Bekijk alle panden</p>
         </div>
         <carousel :breakpoints="breakpoints">
             <slide v-for="(slide, index) in slides" :key="index" class="">
@@ -13,7 +13,7 @@
                         :alt="'Image ' + (index + 1)"
                         class="w-full sm:w-[520px] h-full sm:h-[320px]" />
                     <div class="bg-red px-4 py-1 rounded-[20px] absolute top-2 left-4">
-                        <span class="text-white text-lg font-bold">NIEUW</span>
+                        <span class="text-white text-xs font-bold">NIEUW</span>
                     </div>
                     <div
                         class="bg-blue w-fit px-4 py-[3px] rounded-[20px] absolute right-3 top-56 max-[400px]:top-40 xl:top-64 2xl:top-[270px]">
@@ -37,17 +37,17 @@
                     <div class="flex max-xl:flex-col gap-8 px-8 pb-6">
                         <div class="flex gap-2">
                             <img src="../assets/locationicon.svg" alt="location" class="h-full w-[14px]" />
-                            <p class="text-gray-400 text-xl font-normal">
+                            <p class="text-gray-400 text-xsm font-normal">
                                 {{ slide.location }}
                             </p>
                         </div>
                         <div class="flex gap-2 items-center">
                             <img src="../assets/ruler.svg" alt="location" class="h-full w-[15px]" />
-                            <p class="text-gray-400 text-xl font-normal" v-html="slide.scale" />
+                            <p class="text-gray-400 text-xsm font-normal" v-html="slide.scale" />
                         </div>
                         <div class="flex gap-2 items-center">
                             <img src="../assets/bedicon.svg" alt="location" class="h-full w-[20px]" />
-                            <p class="text-gray-400 text-xl font-normal">
+                            <p class="text-gray-400 text-xsm font-normal">
                                 {{ slide.bed }}
                             </p>
                         </div>

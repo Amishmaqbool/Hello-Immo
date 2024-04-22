@@ -1,8 +1,8 @@
 <template>
     <div class="2xl:max-w-[1640px] container mx-auto sm:pt-40 py-10">
         <div class="sm:flex justify-between px-5 sm:px-4 pb-5 sm:pb-10 items-center">
-            <p class="text-medium sm:text-xlarge text-darkblue font-bold font-[Cabin]">Laatste nieuws</p>
-            <p class="text-darkblue text-xl font-normal underline cursor-pointer">Bekijk alle artikels</p>
+            <p class="text-medium sm:text-2xl text-darkblue font-bold font-[Cabin]">Laatste nieuws</p>
+            <p class="text-darkblue text-xsm font-normal underline cursor-pointer">Bekijk alle artikels</p>
         </div>
         <carousel :breakpoints="breakpoints">
             <slide v-for="(slide, index) in slides" :key="index" class="">
@@ -12,10 +12,10 @@
                         class="bg-gradient-to-b from-transparent via-transparent to-darkblue h-full absolute opacity-110 w-full rounded-2xl lg:py-0 py-10" />
                     <img :src="slide.image" :alt="'Image ' + (index + 1)" class="lg:object-fill h-full" />
                     <div class="bg-blue lg:w-fit px-4 pt-[7px] pb-1 rounded-[20px] absolute left-3 top-7">
-                        <span class="text-white text-lg font-bold">{{ slide.date }}</span>
+                        <span class="text-white text-xs font-bold">{{ slide.date }}</span>
                     </div>
                     <p
-                        class="text-white lg:text-xl xl:text-medium font-bold text-left px-4 lg:pl-3 py-5 absolute bottom-0 shadow-lg w-[90%]">
+                        class="text-white lg:text-xsm xl:text-medium font-bold text-left px-4 lg:pl-3 py-5 absolute bottom-0 shadow-lg w-[90%]">
                         {{ slide.text }}
                     </p>
                 </div>

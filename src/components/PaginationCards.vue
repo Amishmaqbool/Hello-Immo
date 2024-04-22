@@ -4,12 +4,12 @@
             <SearchBanner />
         </div>
         <div class="sm:flex justify-between pt-10 pb-10 items-center">
-            <p class="text-medium sm:text-xlarge text-darkblue font-bold font-[Cabin]">Huis te koop</p>
-            <div class="flex items-center text-darkblue text-xl font-normal">
+            <p class="text-medium sm:text-2xl text-darkblue font-bold font-[Cabin]">Huis te koop</p>
+            <div class="flex items-center text-darkblue text-xsm font-normal">
                 <p class="opacity-[0.65]">Sorteren op:</p>
                 <select
                     v-model="selected"
-                    class="custom-select px-2 w-[150px] font-[500] text-xl text-darkblue border-b-2 border-darkblue">
+                    class="custom-select px-2 w-[150px] font-[500] text-xsm text-darkblue border-b-2 border-darkblue">
                     <option disabled value="">Relevantie</option>
                     <option value="Option 1">Option 1</option>
                     <option value="Option 2">Option 2</option>
@@ -31,7 +31,7 @@
                             :alt="'Image ' + (index + 1)"
                             class="w-full sm:w-full h-full sm:h-[320px]" />
                         <div class="bg-red px-4 py-1 rounded-[20px] absolute top-2 left-4">
-                            <span class="text-white text-lg font-bold">NIEUW</span>
+                            <span class="text-white text-xs font-bold">NIEUW</span>
                         </div>
                         <div
                             class="bg-blue w-fit px-4 py-[3px] rounded-[20px] absolute right-4 sm:right-3 top-[165px] sm:top-56 max-[400px]:top-[120px] xl:top-64 2xl:top-[270px]">
@@ -59,17 +59,17 @@
                         <div class="flex max-xl:flex-col gap-8 px-8 pb-6">
                             <div class="flex gap-2">
                                 <img src="../assets/locationicon.svg" alt="location" class="h-full w-[14px]" />
-                                <p class="text-gray-400 text-xl font-normal">
+                                <p class="text-gray-400 text-xsm font-normal">
                                     {{ slide.location }}
                                 </p>
                             </div>
                             <div class="flex gap-2 items-center">
                                 <img src="../assets/ruler.svg" alt="location" class="h-full w-[15px]" />
-                                <p class="text-gray-400 text-xl font-normal" v-html="slide.scale" />
+                                <p class="text-gray-400 text-xsm font-normal" v-html="slide.scale" />
                             </div>
                             <div class="flex gap-2 items-center">
                                 <img src="../assets/bedicon.svg" alt="location" class="h-full w-[20px]" />
-                                <p class="text-gray-400 text-xl font-normal">
+                                <p class="text-gray-400 text-xsm font-normal">
                                     {{ slide.bed }}
                                 </p>
                             </div>

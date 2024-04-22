@@ -5,12 +5,11 @@
         </div>
         <div class="lg:flex items-center gap-20 2xl:justify-between mt-20 2xl:mt-0">
             <div class="2xl:max-w-[700px] px-5 container sm:mx-auto lg:pl-20 2xl:pl-10">
-                <h1
-                    class="text-large sm:text-xxlarge text-darkblue font-[Cabin] font-[900] leading-[60px] 2xl:w-[100%]">
+                <h1 class="text-xl sm:text-3xl text-darkblue font-[Cabin] font-[900] leading-[60px] 2xl:w-[100%]">
                     Wij helpen je een <br />
                     thuis vinden én financieren
                 </h1>
-                <p class="text-darkblue text-xl pt-10 2xl:w-[90%] leading-[32px]">
+                <p class="text-darkblue text-xsm pt-10 2xl:w-[665px] leading-[32px]">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                     labore et dolore magna aliquyam erat.
                 </p>
@@ -19,7 +18,7 @@
                     <div class="pt-5">
                         <select
                             v-model="selected"
-                            class="custom-select rounded-[30px] border-[1.5px] border-darkblue px-5 py-3 w-full font-[500] text-xl text-darkblue">
+                            class="custom-select rounded-[30px] border-[1.5px] border-darkblue px-5 py-3 w-full font-[500] text-xsm text-darkblue">
                             <option disabled value="">Gemeente of postcode</option>
                             <option value="Option 1">Option 1</option>
                             <option value="Option 2">Option 2</option>
@@ -31,7 +30,7 @@
                         <div class="sm:flex gap-x-[32px] items-center pt-8">
                             <select
                                 v-model="selected2"
-                                class="custom-select rounded-[30px] border-[1.5px] border-darkblue px-5 py-3 w-full font-[500] text-xl text-darkblue">
+                                class="custom-select rounded-[30px] border-[1.5px] border-darkblue px-5 py-3 w-full font-[500] text-xsm text-darkblue">
                                 <option disabled value="">Type</option>
                                 <option value="Option 1">Option 1</option>
                                 <option value="Option 2">Option 2</option>
@@ -39,14 +38,14 @@
 
                             <select
                                 v-model="selected3"
-                                class="custom-select rounded-[30px] border-[1.5px] sm:mt-0 mt-5 border-darkblue px-5 py-3 w-full font-[500] text-xl text-darkblue">
+                                class="custom-select rounded-[30px] border-[1.5px] sm:mt-0 mt-5 border-darkblue px-5 py-3 w-full font-[500] text-xsm text-darkblue">
                                 <option disabled value="">Prijis</option>
                                 <option value="Option 1">Option 1</option>
                                 <option value="Option 2">Option 2</option>
                             </select>
 
                             <p
-                                class="text-xl text-darkblue w-full sm:mt-0 mt-5 sm:text-left text-center underline cursor-pointer">
+                                class="text-xsm text-darkblue w-full sm:mt-0 mt-5 sm:text-left text-center underline cursor-pointer">
                                 Meer filters
                             </p>
                         </div>

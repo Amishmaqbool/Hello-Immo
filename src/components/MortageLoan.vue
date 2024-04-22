@@ -29,7 +29,7 @@
                 <div
                     class="lg:w-[520px] relative lg:pt-0 pt-5"
                     :class="{ 'py-[60px] lg:pt-[60px] pt-[65px] pr-5': isSearchPage }">
-                    <h1 class="text-xlarge text-white font-[Cabin] font-extrabold leading-[50px] relative z-50">
+                    <h1 class="text-2xl text-white font-[Cabin] font-extrabold leading-[50px] relative z-50">
                         Wij helpen je met jouw
                         <span class="z-50"> hypothecaire lening </span>
                     </h1>
@@ -38,7 +38,7 @@
                         alt="underline"
                         class="w-[394px] mt-[-25px] ml-[-10px] z-0"
                         style="transform: translateY(10%)" />
-                    <p class="text-white text-xl pt-[30px]">
+                    <p class="text-white text-xsm pt-[30px]">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                         ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
                         dolores et ea rebum. Stet clita kasd gubergren, no sea

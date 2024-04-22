@@ -3,11 +3,15 @@ export default {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     theme: {
         fontSize: {
+            xs: '1.125rem',
+            xsm: '1.25rem',
             sm: '1.375rem',
+            base: '1.5rem',
             medium: '1.75rem',
-            large: '2.5rem',
-            xlarge: '2.75rem',
-            xxlarge: '3.5rem'
+            lg: '2.25rem',
+            xl: '2.5rem',
+            '2xl': '2.75rem',
+            '3xl': '3.5rem'
         },
         extend: {
             colors: {
